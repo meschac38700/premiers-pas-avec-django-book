@@ -17,7 +17,7 @@ return [
      */
     'fonts' => [
        'linux_libertine' => 'LinLibertine-Regular.ttf',
-       'brandon_text' => 'BrandonText-Regular.ttf',
+       // 'brandon_text' => 'BrandonText-Regular.ttf',
        'open_sans' => 'OpenSans-Regular.ttf',
        'anonymous_pro' => 'AnonymousPro-Regular.ttf',
     ],
