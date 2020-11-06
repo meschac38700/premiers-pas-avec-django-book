@@ -80,7 +80,7 @@ Dans l'exemple ci-dessus, vous pouvez remarquer que mon nom d'utilisateur est `f
 Le signe dollar `$` à la fin est ce qu'on appelle *l'invite de commandes* ou encore le *prompt*. Sa présence indique que vous pouvez entrer la commande que vous souhaitez. Dans ce livre, tout comme dans de nombreux tutoriels de programmation en ligne, vous verrez afficher les commandes que vous devez taper dans votre ligne de commande comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ la_commande_à_taper
 ```
 
@@ -375,7 +375,7 @@ Il est très probable que ce soit une version comme 3.7 ou 3.8. Dans tous les ca
 Si vous avez une distribution Debian, exécutez les commandes suivantes:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ sudo apt update
 $ sudo apt install -y build-essential zlib1g-dev libffi-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 ```
@@ -518,7 +518,7 @@ Le module `python-slugify` est un module assez simple permettant de créer un sl
 Pour installer le module *python-slugify*, il nous suffit d'exécuter la commande suivante:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ pip3 install python-slugify
 Collecting python-slugify
   Downloading python-slugify-4.0.1.tar.gz (8.8 kB)
@@ -535,7 +535,7 @@ Exécutez la commande indiquée pour mettre à jour `pip` si vous avez ce messag
 Vous pouvez également utiliser les commandes `pip3 freeze` ou `pip3 list` afin de lister toutes les dépendances installées sur votre système avec leurs versions respectives. La librairie `python-slugify` devrait se trouver dans cette liste après installation.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ pip3 list
 Package           Version
 ----------------- ----------
@@ -553,7 +553,7 @@ typing-extensions 3.7.4.1
 Vous pouvez obtenir plus de détails sur une dépendance spécifique en utilisant la commande `pip3 show`.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ pip3 show python-slugify
 Name: python-slugify
 Version: 4.0.0

@@ -22,7 +22,7 @@ Ouvrez donc sans plus tard un nouvel onglet au niveau de votre terminal afin de 
 
 Une fois à la racine du projet, exécutez la commande suivante:
 
-```console
+```bash
 (hello-city-venv)$ python manage.py startapp static_pages
 ```
 

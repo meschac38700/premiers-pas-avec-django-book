@@ -49,7 +49,7 @@ Le projet *hello_city* sur lequel nous allons travailler va dépendre de Django.
 
 Pour installer *Django*, nous pouvons normalement exécuter la commande:
 
-```console
+```bash
 $ pip3 install Django
 ```
 
@@ -111,7 +111,7 @@ Il va falloir dans un premier temps se déplacer dans le dossier dans lequel nou
 
 Ouvrez donc la ligne de commande et tapez la commande `cd` suivie du chemin menant à votre dossier. 
 
-```console
+```bash
 $ cd /Users/freedev/Code/PremiersPasAvecDjango
 ```
 
@@ -125,7 +125,7 @@ $ cd /Users/freedev/Code/PremiersPasAvecDjango
 
 Dans mon cas, tous les projets de ce livre vont se trouver dans le dossier:
 
-```console
+```bash
 /Users/freedev/Code/PremiersPasAvecDjango
 ```
 
@@ -133,19 +133,19 @@ Une fois dans ce dossier, il suffit d'utiliser `python` comme suit afin de crée
 
 #### Sous Windows
 
-```console
+```bash
 $ python -m venv hello-city-venv
 ```
 
 #### Sous Linux
 
-```console
+```bash
 $ python3.9 -m venv hello-city-venv
 ```
 
 #### Sous macOS
 
-```console
+```bash
 $ python3 -m venv hello-city-venv
 ```
 
@@ -164,7 +164,7 @@ $ python3 -m venv hello-city-venv
 Notre environnement `hello-city-venv` devrait avoir été créé. On peut le prouver en exécutant la commande `ls`.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ ls
 hello-city-venv
 ```
@@ -176,7 +176,7 @@ Maintenant que l'environnement virtuel `hello-city-venv` est créé, il va fallo
 ### Activation sous Windows
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ hello-city-venv\Scripts\activate.bat
 (hello-city-venv) $
 ```
@@ -184,7 +184,7 @@ $ hello-city-venv\Scripts\activate.bat
 ### Activation sous macOS ou Linux
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ source hello-city-venv/bin/activate
 (hello-city-venv)$
 ```
@@ -202,14 +202,14 @@ Vu que mon environnement virtuel a été créé avec la version 3.9 de Python, P
 ### Sous Windows
 
 {caption: "Ligne de commande"}
-```console
+```bash
 .... output
 ```
 
 ### Sous macOS ou Linux
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ python -V
 Python 3.9.0
 (hello-city-venv)$ which python
@@ -226,14 +226,14 @@ Il en est de même pour pip.
 ### Sous Windows
 
 {caption: "Ligne de commande"}
-```console
+```bash
 .... output
 ```
 
 ### Sous macOS ou Linux
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip -V
 pip 19.2.3 from /Users/freedev/Code/PremiersPasAvecDjango/hello-city-venv/lib/python3.9/site-packages/pip (python 3.9)
 (hello-city-venv)$ which pip
@@ -252,14 +252,14 @@ Maintenant que notre environnement virtuel a été créé et activé, nous pouvo
 Pour installer Django, exécutez la commande:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip install Django
 ```
 
 Vous devriez voir quelque chose comme ceci s'afficher:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 Collecting Django
   Downloading https://files.pythonhosted.org/packages/a9/4f/8a247eee2958529a6a805d38fbacd9764fd566462fa0016aa2a2947ab2a6/Django-3.0.5-py3-none-any.whl (7.5MB)
      |████████████████████████████████| 7.5MB 4.5MB/s
@@ -288,7 +288,7 @@ Exécutez la commande `pip install --upgrade pip` pour mettre à jour `pip` si v
 Vérifions que `Django` est bel et bien installé:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ python
 Python 3.9.0 (v3.9.0:7b3ab5921f, Feb 24 2020, 17:52:18)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -328,14 +328,14 @@ La syntaxe est la suivante:
 Assurez-vous d'être dans le dossier dans lequel vous souhaitez créer votre projet et exécutez la commande:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ django-admin startproject hello_city
 ```
 
 En exécutant la commande `ls` ou `dir`, nous devrions normalement nous retrouver avec quelque chose qui ressemble à ceci:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ ls
 hello_city hello-city-venv
 ```
@@ -365,7 +365,7 @@ Nous allons démarrer un petit serveur web de développement qui vient avec Djan
 Pour ce faire, nous allons nous déplacer dans un premier temps dans le dossier `hello_city` en utilisant la commande `cd`, puis nous allons exécuter la commande `python manage.py runserver`:
 
 {caption: "Ligne de commande"}{caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd hello_city
 (hello-city-venv)$ python manage.py runserver
 Watching for file changes with StatReloader
@@ -433,14 +433,14 @@ Le premier dossier `hello_city` n'a rien de spécial. Étant donné qu'en utilis
 
 ### Sous Windows
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd ..
 (hello-city-venv)$ rename hello_city hello_city_project
 ```
 
 ### Sous Linux ou macOS
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd ..
 (hello-city-venv)$ mv hello_city hello_city_project
 ```
@@ -449,7 +449,7 @@ Vous pouvez le renommer via l'interface graphique si vous le souhaitez.
 
 Je redémarre mon serveur et génial aucune erreur!
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd hello_city_project
 (hello-city-venv)$ python manage.py runserver
 ```
@@ -458,14 +458,14 @@ Je redémarre mon serveur et génial aucune erreur!
 
 Revenons au nom précédent:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd ..
 (hello-city-venv)$ rename hello_city_project hello_city
 ```
 
 ### Sous Linux ou macOS
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ cd ..
 (hello-city-venv)$ mv hello_city_project hello_city
 ```
@@ -2650,7 +2650,7 @@ Quelque soit votre système d'exploitation, il suffit de vous rendre sur [la pag
 
 Ouvrez à présent la console et exécutez la comme suivante afin de vous connecter à votre compte Heroku:
 {caption: "Ligne de commande"}
-```console
+```bash
 $ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 ```
@@ -2663,7 +2663,7 @@ Appuyez ensuite sur n'importe quelle touche afin de continuer le processus de co
 
 Une fois connecté, vous pouvez fermer la fenêtre ouverte au niveau du navigateur et revenir au niveau de la console où vous verrez un message comme le suivant:
 {caption: "Ligne de commande"}
-```console
+```bash
 Logging in... done
 Logged in as parlonscode@gmail.com
 ```
@@ -2676,7 +2676,7 @@ Logged in as parlonscode@gmail.com
 
 Pour créer notre application Heroku, il suffira d'utiliser la commande `heroku create`.
 {caption: "Ligne de commande"}
-```console
+```bash
 $ heroku create
 Creating app... done, young-brook-43267
 https://young-brook-43267.herokuapp.com/ | https://git.heroku.com/young-brook-43267.git
@@ -2708,7 +2708,7 @@ Si vous vous rendez au niveau de votre tableau de bord Heroku, vous verrez votre
 
 Au niveau du [chapitre 2](#chapter-2-premiers-pas-avec-pip), on avait vu qu'il était possible d'utiliser la commande `pip list` afin de lister les dépendances actuelles de notre projet.
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip list
 Package    Version
 ---------- -------
@@ -2724,7 +2724,7 @@ Il existe également la commande `pip freeze` qui permet de faire la même chose
 En effet, la commande `pip freeze` permet de lister l'ensemble des dépendances dans un format adapté au fichier `requirements.txt`. 
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip freeze
 asgiref==3.2.7
 Django==3.0.5
@@ -2756,7 +2756,7 @@ Je vous laisse donc générer votre fichier `requirements.txt`.
 
 ### Linux ou macOS
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip freeze > requirements.txt
 ```
 
@@ -2796,7 +2796,7 @@ Le format utilisé par le fichier `runtime.txt` est sensible à la casse et ne d
 
 ### Linux ou macOS
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ echo 'python-3.9.0' > runtime.txt
 ```
 
@@ -2890,7 +2890,7 @@ Voici donc les étapes à suivre:
 
 Gunicorn peut être installé via `pip` en exécutant la commande:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip install gunicorn
 Collecting gunicorn
   Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
@@ -2902,7 +2902,7 @@ Successfully installed gunicorn-20.0.4
 
 Il ne faudra pas oublier après de rajouter `gunicorn` à la liste de nos dépendances dans le fichier `requirements.txt`.
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip freeze
 certifi==2019.11.28
 gunicorn==20.0.4
@@ -2920,7 +2920,7 @@ typing-extensions==3.7.4.1
 
 ### Linux ou macOS
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip freeze > requirements.txt
 ```
 
@@ -3087,7 +3087,7 @@ staticfiles
 
 Nous allons ensuite initialiser notre projet Django comme un dépôt Git en utilisant la commande suivante:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git init
 Initialized empty Git repository in /Users/freedev/Code/PremiersPasAvecDjango/hello_city/.git/
 ```
@@ -3098,7 +3098,7 @@ Assurez-vous d'être à la racine de votre projet `hello_city`.
 
 Nous allons à présent faire notre premier commit.
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Initial commit & Heroku Setup"
 ```
@@ -3110,7 +3110,7 @@ Nous utilisons ensuite la commande `git commit` afin de créer notre commit avec
 
 Afin de configurer le dépôt distant Heroku vers lequel nous allons copier notre code, il faudra exécuter la commande suivante:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku git:remote -a young-brook-43267
 ```
 
@@ -3118,7 +3118,7 @@ Il vous faudra remplacer `young-brook-43267` par le nom de votre application Her
 
 Nous pouvons exécuter la commande `git remote -v` afin de confirmer que notre dépôt distant Heroku a bien été configuré.
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git remote -v
 heroku  https://git.heroku.com/young-brook-43267.git (fetch)
 heroku  https://git.heroku.com/young-brook-43267.git (push)
@@ -3128,7 +3128,7 @@ heroku  https://git.heroku.com/young-brook-43267.git (push)
 
 Pour déployer notre projet, il faudra pour terminer exécuter la commande `git push heroku master`:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git push heroku master
 Enumerating objects: 20, done.
 Counting objects: 100% (20/20), done.
@@ -3173,7 +3173,7 @@ Nous avons cette erreur parce que Heroku tente d'exécuter la commande `python m
 
 Pour cette application, nous allons désactiver la collecte de fichiers statiques en utilisant la commande:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:set DISABLE_COLLECTSTATIC=1
 Setting DISABLE_COLLECTSTATIC and restarting young-brook-43267... done, v6
 DISABLE_COLLECTSTATIC: 1
@@ -3193,7 +3193,7 @@ Il est également possible de rajouter une variable d'environnement via l'interf
 
 Tentons à présent de refaire le déploiement:
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git push heroku master
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -3222,7 +3222,7 @@ Cette fois-ci, il semblerait que tout se soit bien déroulé! Wouhou!
 Vous pouvez à présent utiliser la commande `heroku open` ou ouvrir votre navigateur et taper dans la barre d'adresse [https://young-brook-43267.herokuapp.com/](https://young-brook-43267.herokuapp.com/).
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku open -a young-brook-43267
 ```
 
@@ -3250,7 +3250,7 @@ Ce paramètre est requis pour protéger votre site contre certaines attaques CSR
 Commitons nos changements et faisons un autre push.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Allow domain 'young-brook-43267.herokuapp.com'"
 (hello-city-venv)$ git push heroku master
@@ -3298,21 +3298,21 @@ Afin de corriger les deux problèmes énoncés plus haut, nous allons nous servi
 Pour créer une variable d'environnement sous macOS ou Linux, il vous suffira d'utiliser la commande `export` comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ export PYTHON_CREATOR='Guido van Rossum'
 ```
 
 La commande ci-dessus permet de créer une variable d'environnement ayant comme nom `PYTHON_CREATOR` et comme valeur `Guido van Rossum`. Étant donné que la valeur `Guido van Rossum` contient des espaces, nous sommes obligés de l'entourer de quotes. On aurait pu utiliser les doubles quotes également comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ export PYTHON_CREATOR="Guido van Rossum"
 ```
 
 Pour afficher ensuite la valeur d'une variable d'environnement, on pourra se servir de la commande `echo`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo $PYTHON_CREATOR
 Guido van Rossum
 ```
@@ -3320,7 +3320,7 @@ Guido van Rossum
 Comme on peut le voir, on met `echo`, suivi du symbole `$`, suivi ensuite du nom de la variable d'environnement. Il est important de préfixer le nom de la variable d'environnement d'un `$` sinon cela ne marchera pas.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo PYTHON_CREATOR
 PYTHON_CREATOR
 ```
@@ -3330,7 +3330,7 @@ La commande `echo` permet d'afficher quelque chose au niveau de la console. Si v
 Si je demande la valeur d'une variable d'environnement qui n'existe pas, vous aurez du vide comme résultat.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo $PREMIERS_PAS_AVEC_DJANGO_AUTHOR
 
 ```
@@ -3338,14 +3338,14 @@ $ echo $PREMIERS_PAS_AVEC_DJANGO_AUTHOR
 Je pourrai donc créer ma variaable `PREMIERS_PAS_AVEC_DJANGO_AUTHOR`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ export PREMIERS_PAS_AVEC_DJANGO_AUTHOR='Honoré Hounwanou'
 ```
 
 Si on refait un `echo`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo $PREMIERS_PAS_AVEC_DJANGO_AUTHOR
 Honoré Hounwanou
 ```
@@ -3359,7 +3359,7 @@ On voit `Honoré Hounwanou` affiché.
 Pour supprimer une variable d'environnement, il suffit d'utiliser la commande `unset` comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ unset NOM_DE_MA_VARIABLE_D_ENVIRONNEMENT
 ```
 
@@ -3368,21 +3368,21 @@ $ unset NOM_DE_MA_VARIABLE_D_ENVIRONNEMENT
 Pour créer une variable d'environnement sous Windows, il vous suffira d'utiliser la commande `set` comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ set PYTHON_CREATOR='Guido van Rossum'
 ```
 
 La commande ci-dessus permet de créer une variable d'environnement ayant comme nom `PYTHON_CREATOR` et comme valeur `Guido van Rossum`. Étant donné que la valeur `Guido van Rossum` contient des espaces, nous sommes obligés de l'entourer de quotes. On aurait pu utiliser les doubles quotes également comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ set PYTHON_CREATOR="Guido van Rossum"
 ```
 
 Pour afficher ensuite la valeur d'une variable d'environnement, on pourra se servir de la commande `echo`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo %PYTHON_CREATOR%
 Guido van Rossum
 ```
@@ -3390,7 +3390,7 @@ Guido van Rossum
 Comme on peut le voir, on met `echo`, suivi du symbole `%`, suivi ensuite du nom de la variable d'environnement, suivi pour terminer du symbole `%`. Il est important d'entourer le nom de la variable d'environnement de `%%` sinon cela ne marchera pas.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo PYTHON_CREATOR
 PYTHON_CREATOR
 ```
@@ -3404,7 +3404,7 @@ La commande `echo` permet d'afficher quelque chose au niveau de la console. Si v
 Si je demande la valeur d'une variable d'environnement qui n'existe pas, vous aurez du vide comme résultat.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo %PREMIERS_PAS_AVEC_DJANGO_AUTHOR%
 
 ```
@@ -3412,14 +3412,14 @@ $ echo %PREMIERS_PAS_AVEC_DJANGO_AUTHOR%
 Je pourrai donc créer ma variaable `PREMIERS_PAS_AVEC_DJANGO_AUTHOR`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ set PREMIERS_PAS_AVEC_DJANGO_AUTHOR='Honoré Hounwanou'
 ```
 
 Si on refait un `echo`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ echo %PREMIERS_PAS_AVEC_DJANGO_AUTHOR%
 Honoré Hounwanou
 ```
@@ -3433,7 +3433,7 @@ On voit `Honoré Hounwanou` affiché.
 Pour supprimer une variable d'environnement, il suffit d'utiliser la commande `set` comme suit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ set NOM_DE_MA_VARIABLE_D_ENVIRONNEMENT=
 ```
 
@@ -3444,7 +3444,7 @@ Comme je vous l'avais dit, les variables d'environnement sont des variables que 
 Démarrer le shell interactif:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ python
 Python 3.9.0 (v3.9.0:7b3ab5921f, Feb 24 2020, 17:52:18)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -3480,7 +3480,7 @@ Valeur par défaut
 J'ai eu à vous cacher quelque chose :). Il existe une fonction raccourcie `os.getenv` permettant d'alléger un peu notre code:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ python
 Python 3.9.0 (v3.9.0:7b3ab5921f, Feb 24 2020, 17:52:18)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -3551,7 +3551,7 @@ $ python -c "import random; print(''.join([random.choice('abcdefghijklmnopqrstuv
 ```
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:set APP_SECRET='q@+-(p^sn1egkknijnx9=ljo$2o+zx3qlpxz%a)e!w5=2q%cp8'
 Setting APP_SECRET and restarting young-brook-43267... done, v9
 APP_SECRET: 'q@+-(p^sn1egkknijnx9=ljo$2o+zx3qlpxz%a)e!w5=2q%cp8'
@@ -3568,7 +3568,7 @@ La commande `heroku config:set` nous permet de configurer une variable d'environ
 Publions nos changements et déployons de nouveau notre application:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Make SECRET_KEY, DEBUG and ALLOWED_HOSTS configurable"
 (hello-city-venv)$ git push heroku master
@@ -3582,7 +3582,7 @@ Publions nos changements et déployons de nouveau notre application:
 Et voilà! Plus de problème de sécurité en rapport avec le paramètre `SECRET_KEY` étant donné que sa valeur provient maintenant de la variable d'environnement `APP_SECRET`. Aussi, motre site web s'affiche sans problème, ce qui revient donc à dire l'hôte `'young-brook-43267.herokuapp.com'` fait maintenant partie des `ALLOWED_HOSTS` en production. Par contre les informations de débogage sont toujours affichées en production alors que notre variable d'environnement `APP_DEBUG` a bel et bien comme valeur `False`.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:get APP_DEBUG
 False
 (hello-city-venv)$ heroku config:get APP_DOMAIN
@@ -3596,7 +3596,7 @@ young-brook-43267.herokuapp.com
 Le problème est tout simple, les variables d'environnement sont toujours interprétées comme des chaînes de caractères. Donc en réalité, en faisant `DEBUG = os.getenv('APP_DEBUG', True)` au niveau de notre machine Heroku, la variable d'environnement `DEBUG` aura comme valeur la chaîne de caractères `'False'`. Et toute chaîne de caractères non vide est évaluée comme `True` en Python.
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ python
 Python 3.9.0 (v3.9.0:7b3ab5921f, Feb 24 2020, 17:52:18)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -3624,7 +3624,7 @@ DEBUG = os.getenv('APP_DEBUG') != 'False'
 Publions nos changements et déployons de nouveau notre application:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Fix bug with DEBUG parameter"
 (hello-city-venv)$ git push heroku master
@@ -3653,7 +3653,7 @@ En lieu et place de créer notre librairie maison, nous allons nous servir de l'
 Ouvrez donc votre terminal et exécutez la commande suivante:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip install django-environ
 ```
 
@@ -3729,7 +3729,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['127.0.0.1', 'localhost'])
 À ce stade, tout devrait normalement marcher en développement étant donné que seules valeurs par défaut précisées seront utilisées. En production par contre, il nous faudra supprimer les variables d'environnement `APP_SECRET`, `APP_DEBUG` et `APP_DOMAIN` précédemment configurées via le client Heroku (en utilisant la commande `heroku config:unset`) et les remplacer par de nouvelles variables d'environnement `SECRET_KEY`, `DEBUG` et `ALLOWED_HOSTS` (en utilisant la commande `heroku config:set`).
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:unset APP_SECRET
 Unsetting APP_SECRET and restarting young-brook-43267... done, v25
 (hello-city-venv)$ heroku config:unset APP_DEBUG
@@ -3739,7 +3739,7 @@ Unsetting APP_DOMAIN and restarting young-brook-43267... done, v27
 ```
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:set SECRET_KEY='q@+-(p^sn1egkknijnx9=ljo$2o+zx3qlpxz%a)e!w5=2q%cp8'
 Setting SECRET_KEY and restarting young-brook-43267... done, v28
 SECRET_KEY: 'q@+-(p^sn1egkknijnx9=ljo$2o+zx3qlpxz%a)e!w5=2q%cp8'
@@ -3752,7 +3752,7 @@ ALLOWED_HOSTS: young-brook-43267.herokuapp.com
 ```
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config
 === young-brook-43267 Config Vars
 ALLOWED_HOSTS:         young-brook-43267.herokuapp.com
@@ -3787,7 +3787,7 @@ django.core.exceptions.ImproperlyConfigured: Set the SECRET_KEY environment vari
 Comitons nos changements et vérifions que tout marche en production!
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Rename env vars to SECRET_KEY, DEBUG and ALLOWED_HOSTS and make use of django-environ library"
 (hello-city-venv)$ git push heroku master
@@ -3802,7 +3802,7 @@ Oups! Nous avons une petite erreur.
 Utilisons la commande `heroku logs --tail` afin d'avoir plus d'informations sur l'erreur qu'on a en production:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku logs --tail
 2020-05-07T06:03:09.629932+00:00 app[web.1]: File "/app/hello_city/settings.py", line 14, in <module>
 2020-05-07T06:03:09.629932+00:00 app[web.1]: import environ
@@ -3819,14 +3819,14 @@ Nous avons oublié de rajouter la librairie `django-environ` à notre fichier `r
 #### Sous Linux ou macOS
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ pip freeze > requirements.txt
 ```
 
 On fait notre commit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Add django-environ to requirements.txt"
 (hello-city-venv)$ git push heroku master
@@ -4047,7 +4047,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 Configurons à présent cette variable d'environnement au niveau de Heroku et donnons lui comme valeur `False`:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ heroku config:set READ_DOT_ENV_FILE=False
 Setting READ_DOT_ENV_FILE and restarting young-brook-43267... done, v41
 READ_DOT_ENV_FILE: False
@@ -4058,7 +4058,7 @@ READ_DOT_ENV_FILE: False
 Célébrons tout ceci en faisant un commit:
 
 {caption: "Ligne de commande"}
-```console
+```bash
 (hello-city-venv)$ git add -A
 (hello-city-venv)$ git commit -m "Do not load .env file in production"
 (hello-city-venv)$ git push heroku master
@@ -4095,7 +4095,7 @@ Vu que nous avons déjà un dépôt Git local existant, je vais exécuter les co
 ![Push vers GitHub (2/2)](hello-city/github-push.png)
 
 {caption: "Ligne de commande"}
-```console
+```bash
 $ git remote add origin https://github.com/parlonscode/hello-city.git
 $ git push -u origin master
 ```
