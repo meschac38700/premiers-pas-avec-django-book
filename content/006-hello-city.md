@@ -528,7 +528,7 @@ Parlons à présent des fichiers et dossiers contenus dans le package `hello_cit
 - Le dossier `__pycache__` contiendra  le bytecode Python compilé et prêt à être exécuté. Vous pouvez l'ignorer car il est généré automatiquement par Python.
 - Le fichier `settings.py` représente le fichier de configuration de notre projet.
 - Le fichier `urls.py` contiendra l'ensemble des routes (urls) de notre projet. Ex: `/admin`,  `/contact`, `/evenements`, etc.
-- Les fichiers `asgi.py` et `wsgi.py` sont en rapport avec notre serveur web. *WSGI* est le standard Python pour les serveurs et applications web. *ASGI* est le nouveau standard Python pour les serveurs et applications web **asynchrones**. Ces deux fichiers nous permettront de faire un déploiement en se basant sur les spécifications *WSGI* ou *ASGI*. Si vous n'avez rien compris de tout ce que je viens de dire sur *WSGI* et *ASGI*, ne vous inquiétez surtout pas, nous y reviendrons :).
+- Les fichiers `asgi.py` et `wsgi.py` sont en rapport avec notre serveur web. *WSGI* est le standard Python pour les serveurs et applications web. *ASGI* est le nouveau standard Python pour les serveurs et applications web **asynchrones**. Ces deux fichiers nous permettront de faire un déploiement en se basant sur les spécifications *WSGI* ou *ASGI*. Si vous n'avez rien compris de tout ce que je viens de dire sur *WSGI* et *ASGI*, ne vous inquiétez surtout pas, nous y reviendrons.
 
 Amusons-nous à modifier le fichier `settings.py`. À la ligne **106**, remplacez:
 
@@ -699,7 +699,7 @@ Donc vous voyez? Assez simple, nous avons eu à faire une **requête** vers le s
 
 ### 3.6.3. L'architecture MVC
 
-Je vous avais promis que nous allions revenir sur l'architecture MVC n'est-ce pas? Eh oui, je tiens toujours mes promesses :).
+Je vous avais promis que nous allions revenir sur l'architecture MVC n'est-ce pas? Eh oui, je tiens toujours mes promesses.
 
 MVC signifie **M**odèle **V**ue **C**ontrôleur (En anglais, **M**odel **V**iew **C**ontroller).
 
@@ -2423,7 +2423,7 @@ Faites-en de même pour le template `pages/about.html` en remplaçant son conten
 {% endblock %}
 ```
 
-Sentez-vous libre de modifier les différentes images. Je ne serai pas fâché :).
+Sentez-vous libre de modifier les différentes images. Je ne serai pas fâché.
 
 ## 3.11. Navigation entre nos deux pages
 
@@ -2736,11 +2736,11 @@ Donc juste pour que ce soit clair, le fichier `requirements.txt` est simplement 
 
 En pratique, on exécute donc la commande `pip freeze` et on fait ensuite un copier-coller de la liste affichée dans un fichier nommé `requirements.txt`. Le fichier doit avoir pour nom `requirements.txt`, c'est une convention. En suivant cette convention, lorsque vous déployerez votre projet sur Heroku, les dépendances qui auront été spécifiées dans votre fichier `requirements.txt` seront automatiquement installées avant le démarrage de votre application Heroku.
 
-En effet, Heroku n'aura qu'à exécuter la commande `pip install -r requirements.txt` afin d'installer les dépendances listées au niveau du fichier `requirements.txt`. Cette commande peut s'avérer également intéressante si vous travaillez en équipe. Tout ce que votre coéquiper aura à faire, c'est créer un environnement virtuel, puis exécuter la commande `pip install -r requirements.txt` afin d'installer toutes les dépendances requises pour le projet. Pour ceux qui ont déjà eu à faire du PHP, c'est l'équivalent du fichier `composer.json`. Pour ceux qui ont déjà eu à faire du JavaScript, c'est l'équivalent du fichier `package.json`. Pour ceux qui ont déjà eu à faire du Ruby, c'est l'équivalent du fichier `Gemfile` :).
+En effet, Heroku n'aura qu'à exécuter la commande `pip install -r requirements.txt` afin d'installer les dépendances listées au niveau du fichier `requirements.txt`. Cette commande peut s'avérer également intéressante si vous travaillez en équipe. Tout ce que votre coéquiper aura à faire, c'est créer un environnement virtuel, puis exécuter la commande `pip install -r requirements.txt` afin d'installer toutes les dépendances requises pour le projet. Pour ceux qui ont déjà eu à faire du PHP, c'est l'équivalent du fichier `composer.json`. Pour ceux qui ont déjà eu à faire du JavaScript, c'est l'équivalent du fichier `package.json`. Pour ceux qui ont déjà eu à faire du Ruby, c'est l'équivalent du fichier `Gemfile`.
 
 Aussi, Heroku reconnaît automatiquement votre projet comme un projet Python si ce dernier inclut un fichier `requirements.txt`, `setup.py` ou `Pipfile` dans son répertoire racine. Ainsi, une fois le fichier `requirements.txt` rajouté à la racine de notre projet *Hello City*, Heroku pourra maintenant le reconnaître comme étant un projet `Python`. Wouhou!
 
-Dans le prochain chapitre, je vous montrerai comment générer un fichier `Pipfile`. Un peu de patience :).
+Dans le prochain chapitre, je vous montrerai comment générer un fichier `Pipfile`. Un peu de patience.
 
 <blockquote class="notice">
     <p><strong>Note:</strong> Si vous êtes sous Linux ou macOS, vous pouvez utiliser la commande: <code>pip freeze > requirements.txt</code>. Ceci va permettre de mettre directement la liste générée par la commande <code>pip freeze</code> dans un fichier nommé <code>requirements.txt</code>.</p>
@@ -3477,7 +3477,7 @@ Valeur par défaut
     <p><strong>Note:</strong> La méthode <code>get</code> n'a rien de spécifique au concept de variables d'environnement. Elle est disponible pour tous les objets de type <code>dict</code> au niveau de Python.<br><code>contacts = {'Honoré': 'mercuryseries@gmail.com', 'John': 'john@example.com'}</code><br><code>contacts.get('Honoré')` affichera `'mercuryseries@gmail.com'</code>.<br><code>contacts.get('Marie', 'Valeur par défaut')</code> affichera <code>'Valeur par défaut'</code>.</p>
 </blockquote>
 
-J'ai eu à vous cacher quelque chose :). Il existe une fonction raccourcie `os.getenv` permettant d'alléger un peu notre code:
+J'ai eu à vous cacher quelque chose. Il existe une fonction raccourcie `os.getenv` permettant d'alléger un peu notre code:
 
 {caption: "Ligne de commande"}
 ```bash

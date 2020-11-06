@@ -152,7 +152,7 @@ Fait amusant! À partir de l'explorateur de fichiers, vous pouvez faire un `cd` 
 
 ![Déplacement dans un répertoire via un glisser-déposer](assets/images/ch02/cd_drag_drop.png)
 
-Il ne vous reste plus qu'à appuyer sur la touch `Entrée` :).
+Il ne vous reste plus qu'à appuyer sur la touch `Entrée`.
 
 Dans les sections suivantes, les choses commenceront à devenir passionnantes. Nous utiliserons la ligne de commande afin de créer, déplacer et supprimer des fichiers sur notre disque dur!
 
@@ -200,7 +200,7 @@ L'astuce avec le `..` que nous avons apprise dans la section sur le retour en ar
 
 ![Déplacement du fichier `bonjour.txt` dans le répertoire personnel](assets/images/ch02/move_file_5.png)
 
-Notre fichier `bonjour.txt` est de retour dans notre répertoire personnel :).
+Notre fichier `bonjour.txt` est de retour dans notre répertoire personnel.
 
 Apprenons à présent à faire des copies à partir de la ligne de commande.
 
@@ -212,7 +212,7 @@ N'oubliez pas, aucune réponse signifie généralement un succès! Faites un `ls
 
 ![Création d'une copie du fichier `bonjour.txt` nommée `hello.txt`](assets/images/ch02/copy_file.png)
 
-Si vous êtes intéressés à découvrir comment copier des dossiers et non des fichiers, prenez votre mal en patience, nous y reviendrons dans un instant :).
+Si vous êtes intéressés à découvrir comment copier des dossiers et non des fichiers, prenez votre mal en patience, nous y reviendrons dans un instant.
 
 Pour l'instant, avouez que c'est idiot d'avoir deux fichiers vides. Apprenons donc à supprimer des fichiers.
 
@@ -404,7 +404,7 @@ Téléchargez la dernière version en date.
 
 Faites ensuite un double-clic sur le fichier `.pkg` téléchargé `python-3.9.0-macosx10.9.pkg`.
 
-Suivez les différentes étapes de l'assistant d'installation et vous aurez Python installé sur votre précieux Mac :).
+Suivez les différentes étapes de l'assistant d'installation et vous aurez Python installé sur votre précieux Mac.
 
 Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-le) afin que les changements apportés lors de l'installation soient pris en compte. Dans le nouveau terminal, exécutez la commande `python3 -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est un "V" majuscule et non un "v" minuscule.
 
@@ -586,9 +586,9 @@ Même si cela fonctionne, je n'aime pas cette manière d'installer les librairie
 
 ## 2.5. Félicitations!
 
-Est-ce vrai ce qu'on dit ? Python est installé sur votre machine ? Sublime Text ou PyCharm ou VS Code ou ... aussi :) ? Vous savez également comment installer une librairie en utilisant pip?
+Est-ce vrai ce qu'on dit? Python est installé sur votre machine? Sublime Text ou PyCharm ou VS Code ou ... aussi? Vous savez également comment installer une librairie en utilisant pip?
 
-Qu'est-ce qu'on attend donc pour créer notre premier projet Django ?
+Qu'est-ce qu'on attend donc pour créer notre premier projet Django?
 
 ## 2.6. Résumé
 

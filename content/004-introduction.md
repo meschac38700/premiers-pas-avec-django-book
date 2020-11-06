@@ -36,7 +36,7 @@ En revanche, plusieurs frameworks populaires -- notamment *Flask* en Python et *
 
 Django reste en développement actif et a [un calendrier de sortie annuel](https://www.djangoproject.com/download/#supported-versions). La communauté Django ajoute constamment de nouvelles fonctionnalités et des améliorations de sécurité. Et surtout, il est écrit dans le très élégant et puissant langage de programmation Python. En bref, si vous souhaitez créer un site web professionel, Django est un excellent choix.
 
-Pour terminer, sachez que Django est le framework web Python le plus populaire. Il existe d'autres frameworks web Python (comme [Pyramid](https://trypyramid.com/) et [TurboGears](https://www.turbogears.org/)) mais Django demeure depuis plusieurs années le plus utilisé au niveau de la communauté web Python. Grâce à ce livre, vous serez en mesure de faire maintenant partie de cette chaleureuse communauté :).
+Pour terminer, sachez que Django est le framework web Python le plus populaire. Il existe d'autres frameworks web Python (comme [Pyramid](https://trypyramid.com/) et [TurboGears](https://www.turbogears.org/)) mais Django demeure depuis plusieurs années le plus utilisé au niveau de la communauté web Python. Grâce à ce livre, vous serez en mesure de faire maintenant partie de cette chaleureuse communauté.
 
 ### 1.1.1. Un framework MVC
 
@@ -109,7 +109,7 @@ Git est ce qu'on appelle un logiciel de gestion de versions. Il permet de tracke
 
 Pour ceux d'entre vous qui sont toujours là, je vais également supposer que vous avez déjà un environnement de développement opérationnel. Cela devrait normalement être le cas si vous avez déjà eu à écrire ne serait-ce que deux (2) ou trois (3) programmes en Python. [Le chapitre 2](#chapter-2) présente toutefois la procédure d'installation de l'interpréteur Python au niveau de Windows, Linux ou macOS afin d'être sûr que nous soyons sur la même longueur d'onde.
 
-Dans ce livre, j'utiliserai comme éditeur de code [Sublime Text 3](https://www.sublimetext.com/3), mais sentez-vous libre d'utiliser le logiciel (Editeur de code ou Environnement de développement intégré) avec lequel vous vous sentez le plus confortable: [PyCharm](https://www.jetbrains.com/pycharm/), [Visual Studio Code](https://code.visualstudio.com/), [Spyder](https://www.spyder-ide.org/), [PyDev](https://www.pydev.org/) ou même [Vim](https://www.vim.org/) en console suffirait pour les pros que vous êtes :).
+Dans ce livre, j'utiliserai comme éditeur de code [Sublime Text 3](https://www.sublimetext.com/3), mais sentez-vous libre d'utiliser le logiciel (Editeur de code ou Environnement de développement intégré) avec lequel vous vous sentez le plus confortable: [PyCharm](https://www.jetbrains.com/pycharm/), [Visual Studio Code](https://code.visualstudio.com/), [Spyder](https://www.spyder-ide.org/), [PyDev](https://www.pydev.org/) ou même [Vim](https://www.vim.org/) en console suffirait pour les pros que vous êtes.
 
 Mon choix s'est porté sur *Sublime Text* pour deux raisons:
 
