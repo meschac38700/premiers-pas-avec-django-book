@@ -1,0 +1,82 @@
+parler de la différence entre slash et antislash (windows, linux/macOS)
+
+parler de la différence entre chemin relatif et chemin absolu.
+vous voyez que lorsqu'on fait un drag-drop le chemin est spécifié de manière différente. c'est ce qu'on appelle un chemin absolu car le chemin est spécifié depuis la racine C:\. Nous avons jusque-là utilisé des chemins relatifs, qui sont des chemins relatifs à notre emplacement actuel.
+
+bien regarder où le f'' est ce n'est pas printf
+
+le serveur se coupe si vous faites des erreurs de code python
+
+on peut mettre activate en lieu et place de activate.bat ça marche sous windows aussi
+
+le nom du template n'est pas obligé d'être le même que celui de la vue.
+
+changer tous mes textes en français. Made with Love ...
+
+Ne pas mettre les \ présents dans le script, c'est parce que la ligne est trop longue
+
+from django.utils import timezone
+utiliser timezone.localtime(timezone.now()).strftime("")
+
+How can I obtain the local time in the current time zone?
+
+Well, the first question is, do you really need to?
+
+You should only use local time when you’re interacting with humans, and the template layer provides filters and tags to convert datetimes to the time zone of your choice.
+
+Furthermore, Python knows how to compare aware datetimes, taking into account UTC offsets when necessary. It’s much easier (and possibly faster) to write all your model and view code in UTC. So, in most circumstances, the datetime in UTC returned by django.utils.timezone.now() will be sufficient.
+
+For the sake of completeness, though, if you really want the local time in the current time zone, here’s how you can obtain it:
+
+>>> from django.utils import timezone
+>>> timezone.localtime(timezone.now())
+datetime.datetime(2012, 3, 3, 20, 10, 53, 873365, tzinfo=<DstTzInfo 'Europe/Paris' CET+1:00:00 STD>)
+In this example, the current time zone is "Europe/Paris".
+
+How can I see all available time zones?
+
+pytz provides helpers, including a list of current time zones and a list of all available time zones – some of which are only of historical interest.
+
+dire si c'Est mieux d'utiliser datetime.now et passer la variable ou bien utiliser les tags? qu'est-ce qui est mieux
+
+d'où vient le Y, insister que ce sont les formats
+
+clarifier dès le début la notion d'environnements: c'est quoi l'environnement de dev (local), l'environnement de production (live en ligne), l'environnement de staging (naomi).
+
+glisser quelques mots sur synchrone/asynchrone maybe avec l'exemple de fichier comme avec Node.js
+
+reformuler pour dire que peu importe il faudra installer le client heroku car anyway on aura besoin de cela pour le déploiement. pour la création d'application, ça ne change rien mais pour le déploiement il faudra avoir le client.
+
+ctrl+c pour couper le serveur, redire cela.
+
+lors du déploiement, vous pouvez couper le serveur afin d'avoir accès à la console sinon elle est bloquée ou bien vous pouvez ouvrir une autre console.
+
+avant de faire pip freeze assurez-vous que votre environnement virtuel est activé.
+
+montrer comment copier dans la console sous Windows.
+
+dire de prendre mon gitignore pas un autre.
+créer .gitignore dans sublime text si ça ne marche pas sous Windows
+
+remember git credential see mhalt ruby on rails course
+make use of HTTPS instead of SSH. More easy.
+
+parler des branches avec update readme
+
+difference between heroku logs vs heroku logs --tail
+
+talk about heroku rename
+
+les variables d'Environnement que vous crééz avec set ou export ne sont pas persistés. Ils sont juste présent pour la session. Comment persister?
+
+vous devez prendre comme valeur par défaut pour SECRET_KEY, votre clé secrète qui avait été générée.
+
+python -c c'est dans la console pas dans la console python
+don't copy my key generate your own key (mettre ça before)
+
+config:set doit être dans le même dossier que l'application sinon on peut utiliser l'option -a
+
+pour les variables d'environnement always use double quotes instead of simple quote.
+Donc remplacer heroku config:set APP_SECRET='...' with double quotes
+
+vous verrez que le débogage est activé. cmt? mettez un mauvais path et vous verrez
