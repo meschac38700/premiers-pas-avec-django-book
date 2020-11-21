@@ -403,11 +403,10 @@ Sur la plupart des distributions Linux, Python est généralement pré-installé
     <p><strong>Comment afficher la version de Python installée?</strong><br>Afin de connaitre la version de Python installée, tapez dans un terminal la commande: <code>python3 -V</code>. Attention, c'est un "V" majuscule et non un "v" minuscule.</p>
 </blockquote>
 
-Il est très probable que ce soit une version comme 3.7 ou 3.8. Dans tous les cas, je vous conseille d'installer la dernière version en date de la branche **3.x**. Au moment où j'écris ces lignes, il s'agit de la version `3.9`.
+Il est très probable que ce soit une version comme 3.7 ou 3.8. Dans tous les cas, je vous conseille d'installer la dernière version en date de la branche `3.x`. Au moment où j'écris ces lignes, il s'agit de la version `3.9`.
 
 Si vous avez une distribution Debian, exécutez les commandes suivantes:
 
-{caption: "Ligne de commande"}
 ```bash
 $ sudo apt update
 $ sudo apt install -y build-essential zlib1g-dev libffi-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
@@ -550,7 +549,6 @@ Le module `python-slugify` est un module assez simple permettant de créer un sl
 
 Pour installer le module *python-slugify*, il nous suffit d'exécuter la commande suivante:
 
-{caption: "Ligne de commande"}
 ```bash
 $ pip3 install python-slugify
 Collecting python-slugify
@@ -567,7 +565,6 @@ Exécutez la commande indiquée pour mettre à jour `pip` si vous avez ce messag
 
 Vous pouvez également utiliser les commandes `pip3 freeze` ou `pip3 list` afin de lister toutes les dépendances installées sur votre système avec leurs versions respectives. La librairie `python-slugify` devrait se trouver dans cette liste après installation.
 
-{caption: "Ligne de commande"}
 ```bash
 $ pip3 list
 Package           Version
@@ -585,7 +582,6 @@ typing-extensions 3.7.4.1
 
 Vous pouvez obtenir plus de détails sur une dépendance spécifique en utilisant la commande `pip3 show`.
 
-{caption: "Ligne de commande"}
 ```bash
 $ pip3 show python-slugify
 Name: python-slugify
