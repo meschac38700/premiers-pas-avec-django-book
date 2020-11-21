@@ -16,9 +16,9 @@ Nous avons l'habitude d'avoir des programmes pour tout ce que nous voulons faire
 
 ![Explorateur de fichiers (Fenêtre Finder) sous macOS](assets/images/ch02/finder_window_mac_os.png)
 
-Il est possible de faire exactement la même chose avec la ligne de commande --naviguer sur notre disque dur, créer de nouveaux fichiers et dossiers, supprimer des fichiers et dossiers-- nous n'aurons tout simplement pas d'interface graphique (en d'autres termes, nous n'aurons pas de jolis boutons et de listes déroulantes) et en lieu et place de cliquer, nous allons devoir saisir ce que nous voulons.
+Il est possible de faire exactement la même chose avec la ligne de commande: naviguer sur notre disque dur, créer de nouveaux fichiers et dossiers, supprimer des fichiers et dossiers. Nous n'aurons tout simplement pas d'interface graphique (en d'autres termes, nous n'aurons pas de jolis boutons et de listes déroulantes) et en lieu et place de cliquer, nous allons devoir saisir ce que nous voulons.
 
-Sur un Mac, la ligne de commande est disponible au travers d'un programme nommé *"Terminal"* situé dans `/Applications/Utilities`. Pour le trouver, ouvrez une nouvelle fenêtre *Finder*, ouvrez ensuite le répertoire *Applications*, faites défiler vers le bas pour ouvrir le répertoire *Utilities* et double-cliquez sur l'application appelée `Terminal`.
+Sur un Mac, la ligne de commande est disponible au travers d'un programme nommé *Terminal* situé dans `/Applications/Utilities`. Pour la trouver, ouvrez une nouvelle fenêtre *Finder*, puis ouvrez ensuite le répertoire *Applications*, faites défiler vers le bas pour ouvrir le répertoire *Utilities* et double-cliquez sur l'application appelée `Terminal`.
 
 ![Trouver l'application Terminal via Finder](assets/images/ch02/find_terminal_app_via_finder.png)
 
@@ -33,7 +33,7 @@ Pour ce livre, j'ai fais le choix d'utiliser *PowerShell* mais *CMD* aurait éga
 
 ![PowerShell](assets/images/ch02/powershell_windows.png)
 
-Sous Linux, la ligne de commande est généralement disponible au travers d'un programme nommé *"Terminal"*, mais bien évidemment cela peut changer d'une distribution Linux à une autre. Je vous inviterai donc à faire une petite recherche Google afin de trouver le programme à exécuter en fonction de votre distribution Linux.
+Sous Linux, la ligne de commande est généralement disponible au travers d'un programme nommé *Terminal*, mais bien évidemment cela peut changer d'une distribution Linux à une autre. Je vous inviterai donc à faire une petite recherche Google afin de trouver le programme à exécuter en fonction de votre distribution Linux.
 
 ![L'application Terminal sous Ubuntu 20.04](assets/images/ch02/terminal_ubuntu.png)
 
@@ -47,7 +47,7 @@ Bien qu'il existe de nombreuses commandes disponibles, vous n'avez pas besoin de
 
 ### 2.1.1. Qu'est-ce que Unix?
 
-Windows, macOS et Linux sont ce qu'on appelle des systèmes d'exploitation. En informatique, un système d'exploitation (souvent abrégé **OS** -- de l'anglais *Operating System*) est un ensemble de programmes gérant l'utilisation des ressources d'un ordinateur par le biais de logiciels applicatifs. En d'autres termes, le système d'exploitation est un peu comme le chef d'orchestre. C'est lui qui doit gérer la mémoire de votre ordinateur, la répartir entre tous les programmes. Il fait en quelque sorte le lien entre votre matériel (carte graphique, mémoire, etc) et vos logiciels.
+Windows, macOS et Linux sont ce qu'on appelle des systèmes d'exploitation. En informatique, un système d'exploitation (souvent abrégé **OS**, de l'anglais *Operating System*) est un ensemble de programmes gérant l'utilisation des ressources d'un ordinateur par le biais de logiciels applicatifs. En d'autres termes, le système d'exploitation est un peu comme le chef d'orchestre. C'est lui qui doit gérer la mémoire de votre ordinateur, la répartir entre tous les programmes. Il fait en quelque sorte le lien entre votre matériel (carte graphique, mémoire, etc) et vos logiciels.
 
 Unix est précisement, une famille de systèmes d'exploitation, dont macOS et Linux font partie. Pour faire simple, vous pouvez voir Unix comme l'ancêtre de Linux et macOS. De nombreux tutoriels en ligne appellent la ligne de commande, « *la ligne de commande Unix* », car macOS, Linux et d'autres systèmes d'exploitation partagent le même ensemble de commandes pour parler à leur ordinateur. Si vous avez donc Linux ou macOS, la grande majorité des commandes de base à taper seront identiques.
 
@@ -79,24 +79,23 @@ Dans l'exemple ci-dessus, vous pouvez remarquer que mon nom d'utilisateur est `f
 
 Le signe dollar `$` à la fin est ce qu'on appelle *l'invite de commandes* ou encore le *prompt*. Sa présence indique que vous pouvez entrer la commande que vous souhaitez. Dans ce livre, tout comme dans de nombreux tutoriels de programmation en ligne, vous verrez afficher les commandes que vous devez taper dans votre ligne de commande comme suit:
 
-{caption: "Ligne de commande"}
 ```bash
 $ la_commande_à_taper
 ```
 
 Le signe dollar `$` est utilisé afin de faire fi de vos informations personnelles et vous indiquer que vous êtes dans la ligne de commande et c'est l'endroit au niveau duquel vous allez taper vos différentes commandes.
 
-Après les deux points `:`, nous avons le répertoire courant. En d'autres termes, le dossier dans lequel nous nous trouvons actuellement. Le tilda `~` ici fait référence à notre répertoire utilisateur ou répertoire personnel. Sous Windows, c'est un peu comme l'équivalent de `C:\Users\votre_nom_d_utilisateur` ou encore `C:\Utilisateurs\votre_nom_d_utilisateur`.
+Après les deux points `:`, nous avons le répertoire courant. En d'autres termes, le dossier dans lequel nous nous trouvons actuellement. Le tilda `~` ici fait référence à notre *répertoire utilisateur* encore appelé *répertoire personnel*. Sous Windows, c'est un peu comme l'équivalent de `C:\Users\votre_nom_d_utilisateur` ou encore `C:\Utilisateurs\votre_nom_d_utilisateur`.
 
 ![Le prompt sur PowerShell](assets/images/ch02/powershell_windows.png)
 
 Au niveau de PowerShell, le prompt est un peu différent. Il est symbolisé par le signe supérieur `>` et on ne voit pas afficher le nom d'utilisateur et le nom d'ordinateur, juste le chemin du dossier dans lequel nous nous trouvons actuellement. Dans mon cas, il s'agit de `C:\Users\freedev`.
 
-Vous devrez entrer les commandes présentées dans les sections suivantes au niveau de *PowerShell* si vous avez Windows ou au niveau de l'application *Terminal* si vous avez Linux/macOS. Pour raison de concision, je montrai uniquement les résultats d'exécution des commandes au niveau de *PowerShell*, mais vous devez avoir des résultats quasi similaires si vous avez Linux ou macOS.
+Vous devrez entrer les commandes présentées dans les sections suivantes au niveau de *PowerShell* si vous avez Windows ou au niveau de l'application *Terminal* si vous avez Linux/macOS. Pour raison de concision, je montrai uniquement en images, les résultats d'exécution des commandes au niveau de *PowerShell*, mais vous devez avoir des résultats quasi similaires si vous avez Linux ou macOS.
 
 ### 2.1.4. La commande ls
 
-La première commande que nous allons apprendre est la commande `ls`, qui est l'abréviation de "*list*". Cette commande permet de lister les fichiers et dossiers présents dans notre répertoire courant.
+La première commande que nous allons apprendre est la commande `ls`, qui est l'abréviation de *list*. Cette commande permet de lister les fichiers et dossiers présents dans notre répertoire courant.
 
 Vous remarquerez que les commandes sont raccourcies pour être aussi courtes que possible, ce qui sera utile lorsque vous serez à l'aise avec ces commandes et que vous les taperez à plusieurs reprises. Cela fera moins de caractères à taper!
 
@@ -114,11 +113,11 @@ La ligne de commande démarre généralement dans notre répertoire utilisateur.
 
 ### 2.1.5. La commande cd
 
-De la même manière que grâce à l'explorateur de fichiers, vous pouvez double-cliquer par exemple sur « *Pictures* » afin d'ouvrir ce dossier (on parle également de "*répertoire*"), au niveau de la ligne de commande, vous pouvez utiliser la commande `cd` (« *change directory* -- changer de répertoire en anglais ») afin "*d'ouvrir*" un répertoire.
+De la même manière que grâce à l'explorateur de fichiers, vous pouvez double-cliquer par exemple sur « *Pictures* » afin d'ouvrir ce dossier (on parle également de *répertoire* en lieu et place de dossier), au niveau de la ligne de commande, vous pouvez utiliser la commande `cd` (« *change directory*, changer de répertoire en anglais ») afin *d'ouvrir* un répertoire.
 
 ![Déplacement dans le répertoire *Pictures*](assets/images/ch02/cd_output.png)
 
-Dans la capture d'écran de la ligne de commande, j'ai fait un `cd` dans le dossier *Pictures*. Utilisez à présent votre imagination -- vous venez d'entrer dans le répertoire *Pictures*. La ligne de commande a été mise à jour pour indiquer que vous êtes actuellement *dans* le répertoire *Pictures*. Une fois dans le répertoire *Pictures*, vous pouvez utiliser la commande `ls` pour voir le contenu de ce répertoire, comme nous l'avons fait précédemment avec l'explorateur de fichiers. Mon dossier *Pictures* contient deux sous-dossiers *Camera Roll* et *Saved Pictures*.
+Dans la capture d'écran de la ligne de commande, j'ai fait un `cd` dans le dossier *Pictures*. Utilisez à présent votre imagination, vous venez d'entrer dans le répertoire *Pictures*. La ligne de commande a été mise à jour pour indiquer que vous êtes actuellement *dans* le répertoire *Pictures*. Une fois dans le répertoire *Pictures*, comme nous l'avons fait précédemment avec l'explorateur de fichiers, vous pouvez utiliser la commande `ls` pour voir le contenu de ce répertoire. Mon dossier *Pictures* contient deux sous-dossiers *Camera Roll* et *Saved Pictures*.
 
 Dans l'explorateur de fichiers, vous pouvez double-cliquer n'importe où et voir le contenu des différents dossiers. L'explorateur de fichiers est, essentiellement, un `cd` et `ls` dans les coulisses, qui affiche les résultats dans une représentation graphique beaucoup plus jolie, plutôt que d'utiliser simplement du texte.
 
@@ -148,13 +147,13 @@ Wouhou! Nous sommes de retour dans notre répertoire personnel. J'aime utiliser 
 
 Vous êtes allez un peu trop en arrière? Utilisez la commande `pwd` afin de voir le répertoire dans lequel vous vous trouvez, puis utilisez la commande `cd` pour revenir à l'endroit où vous souhaitez vous rendre.
 
-Fait amusant! À partir de l'explorateur de fichiers, vous pouvez faire un `cd` dans n'importe quel dossier, en faisant un glisser-déposer du dossier dans la ligne de commande. Pour ce faire, il suffit de taper dans un premier temps `cd` dans votre ligne de commande (n'oubliez pas un espace après `cd`), puis cliquez et maintenez sur un dossier dans votre explorateur de fichiers, et faites-le glisser vers la ligne de commande. Votre ordinateur mettra le chemin menant à ce dossier dans votre ligne de commande afin de vous faciliter la tâche! Génial n'est-ce pas?
+Petite astuce! À partir de l'explorateur de fichiers, vous pouvez faire un `cd` dans n'importe quel dossier, en faisant un glisser-déposer du dossier dans la ligne de commande. Pour ce faire, il suffit de taper dans un premier temps `cd` dans votre ligne de commande (n'oubliez pas de rajouter un espace après `cd`), puis cliquez et maintenez sur un dossier dans votre explorateur de fichiers, et faites-le glisser vers la ligne de commande. Votre ordinateur mettra le chemin menant à ce dossier dans votre ligne de commande afin de vous faciliter la tâche! Génial n'est-ce pas?
 
 ![Déplacement dans un répertoire via un glisser-déposer](assets/images/ch02/cd_drag_drop.png)
 
 Il ne vous reste plus qu'à appuyer sur la touch `Entrée`.
 
-Dans les sections suivantes, les choses commenceront à devenir passionnantes. Nous utiliserons la ligne de commande afin de créer, déplacer et supprimer des fichiers sur notre disque dur!
+Dans les sections suivantes, les choses commenceront à devenir passionnantes. Nous utiliserons la ligne de commande afin de créer, déplacer et supprimer des fichiers sur notre disque dur.
 
 ### 2.1.7. Création de fichiers
 
@@ -170,7 +169,7 @@ Si vous êtes sous Linux/macOS, il n'y aura aucun message de réussite ou quoi q
 
 ![Création d'un fichier sous macOS avec la commande `touch`](assets/images/ch02/macos_new_file.png)
 
-Et vous pouvez également voir le fichier dans l'explorateur de fichiers également:
+Et vous pouvez également voir le fichier dans l'explorateur de fichiers:
 
 ![Fichier `bonjour.txt` créé sous PowerShell](assets/images/ch02/file_bonjour_txt.png)
 
@@ -206,7 +205,7 @@ Apprenons à présent à faire des copies à partir de la ligne de commande.
 
 ### 2.1.9. Copie de fichiers
 
-Pour copier un fichier, vous devez utiliser la commande `cp` comme suit: `cp NOM_DU_FICHIER_À_COPIER NOM_DU_FICHIER_COPIE`. Donc, pour copier notre fichier `bonjour.txt` et nommer la copie `hello.txt`, nous allons exécuter la commande suivante: `cp bonjour.txt hello.txt`.
+Pour copier un fichier, vous devez utiliser la commande `cp` comme suit: `cp NOM_DU_FICHIER_À_COPIER NOM_DU_FICHIER_COPIE`. Pour copier donc notre fichier `bonjour.txt` et nommer la copie `hello.txt`, nous allons exécuter la commande suivante: `cp bonjour.txt hello.txt`.
 
 N'oubliez pas, aucune réponse signifie généralement un succès! Faites un `ls` des fichiers se trouvant dans votre répertoire courant afin de confirmer que le nouveau fichier copie est bel et bien présent.
 
@@ -220,11 +219,13 @@ Pour l'instant, avouez que c'est idiot d'avoir deux fichiers vides. Apprenons do
 
 Cette partie est assez effrayante. Lorsque vous supprimez des fichiers à l'aide de la ligne de commande, il ne sont pas mis dans une corbeille ou un bac de recyclage. **Ils sont juste supprimés!** Il n'est donc pas possible d'annuler une suppression accidentelle. C'est là qu'un système de contrôle de versions comme *Git* serait utile. Je vous recommande fortement de l'utiliser avec tous vos projets informatiques afin que vous puissiez enregistrer vos différentes modifications et faire des restaurations à partir d'une sauvegarde si le besoin se fait ressentir. Nous verrons de manière pratique comment utiliser *Git*, ne vous inquiétez donc pas.
 
-Nous savons que notre fichier `hello.txt` est inutile, car il s'agit d'une copie de notre fichier d'origine `bonjour.txt`. Supprimons-le en utilisant la commande `rm`. La commande `rm` permet de supprimer un fichier et s'utilise comme suit: `rm NOM_DU_FICHIER_À_SUPPRIMER` (donc dans notre cas: `rm hello.txt`):
+Nous savons que notre fichier `hello.txt` est inutile, car il s'agit d'une copie de notre fichier d'origine `bonjour.txt`. Supprimons-le en utilisant la commande `rm`. `rm` est le diminutif de **r**e**m**ove qui veut dire supprimer en anglais.
+
+La commande `rm` permet de supprimer un fichier et s'utilise comme suit: `rm NOM_DU_FICHIER_À_SUPPRIMER` (donc dans notre cas: `rm hello.txt`):
 
 ![Suppression du fichier `hello.txt`](assets/images/ch02/delete_file.png)
 
-Désolé! Pendant tout ce temps, je vous ai demandé de tout taper. Il existe quelques petites astuces de saisie semi-automatique (on parle également *d'autocomplétion*) et d'autres outils que vous pouvez utiliser pour gagner du temps lors de la saisie de commandes ou éviter des fautes de frappe.
+Désolé! Pendant tout ce temps, je vous ai demandé de tout taper. Il existe cependant quelques petites astuces de saisie semi-automatique (on parle également *d'autocomplétion*) et d'autres outils que vous pouvez utiliser pour gagner du temps lors de la saisie de commandes ou éviter des fautes de frappe.
 
 ### 2.1.11. Tabulation pour avoir de l'autocomplétion
 
@@ -234,17 +235,17 @@ Essayons de nouveau de déplacer un fichier avec `mv`. Rappelez-vous, la command
 
 ![Autocomplétion du nom de fichier `bonjour.txt`](assets/images/ch02/autocompletion.png)
 
-Au niveau de Windows, vous remarquerez qu'un (`.\`) est ajouté comme préfixe lors de l'autocomplétion. Le point fait référence au répertoire dans lequel nous nous trouvons présentement, on parle également de répertoire courant. Ainsi, mettre `.\bonjour.txt` revient à dire que le fichier `bonjour.txt` se trouve dans le répertoire courant (dans mon cas `C:\Users\freedev`). Donc si l'on résume, (`.`) permet de faire référence au répertoire courant et (`..`) permet de faire référence au répertoire parent.  
+Au niveau de Windows, vous remarquerez qu'un (`.\`) est ajouté comme préfixe lors de l'autocomplétion. Le point fait référence au répertoire dans lequel nous nous trouvons présentement, on parle également de répertoire courant. Ainsi, mettre `.\bonjour.txt` revient à dire que le fichier `bonjour.txt` se trouve dans le répertoire courant (dans mon cas `C:\Users\freedev`). Donc si l'on résume, le point `.` permet de faire référence au répertoire courant et les deux points `..` permettent de faire référence au répertoire parent.  
 
 <blockquote class="notice">
-    <p><strong>Note:</strong> Si l'autocomplétion ne fonctionne pas et que vous entendez ce triste son "<em>doot</em>" si vous avez vos haut-parleurs allumés, cela signifie que la saisie semi-automatique ne voit aucun nom de fichier/dossier commençant par les lettres que vous avez tapées jusqu'à présent, donc il ne pouvait pas trouvé le fichier ou l'emplacement spécifié. Cela pourrait également signifier qu'il existe plusieurs fichiers/dossiers dont les noms commencent par ce que vous avez saisi. Vous devez donc entrer plus de caractères jusqu'à ce qu'il n'y ait plus d'ambiguïté pour que la saisie semi-automatique puisse trouver le fichier/dossier exact que vous recherchez.</p>
+    <p><strong>Note:</strong> Si l'autocomplétion ne fonctionne pas et que vous entendez ce triste son <em>doot</em> si vous avez vos haut-parleurs allumés, cela signifie que la saisie semi-automatique ne voit aucun nom de fichier/dossier commençant par les lettres que vous avez tapées jusqu'à présent, donc il ne pouvait pas trouver le fichier ou l'emplacement spécifié. Cela pourrait également signifier qu'il existe plusieurs fichiers/dossiers dont les noms commencent par ce que vous avez saisi. Vous devez donc entrer plus de caractères jusqu'à ce qu'il n'y ait plus d'ambiguïté pour que la saisie semi-automatique puisse trouver le fichier/dossier exact que vous recherchez.</p>
 </blockquote>
 
-L'autocomplétion s'avère très pratique lorsque vous travaillez avec des fichiers/dossiers avec des noms longs! Après avoir travaillé un peu avec, utiliser la tabulation pour terminer automatiquement vos commandes en ligne de commande deviendra une seconde nature.
+L'autocomplétion s'avère très pratique lorsque vous travaillez avec des fichiers/dossiers avec des noms longs. Après avoir travaillé un peu avec, utiliser la tabulation pour terminer automatiquement vos commandes en ligne de commande deviendra une seconde nature.
 
 ### 2.1.12. Appuyer la touche directionnelle haut pour accéder aux commandes précédentes
 
-Si vous vous retrouvez à taper la même commande dans la ligne de commande encore et encore (par exemple, vous exécutez à plusieurs reprises un script que vous avez écrit), vous pouvez appuyer sur la touche directionnelle *"haut"* dans la ligne de commande pour accéder aux commandes précédemment saisies! Appuyez sur *"Entrée"* après avoir trouvé la commande que vous souhaitez réexécuter et elle s'exécutera. Gain de temps assez pratique!
+Si vous vous retrouvez à taper la même commande dans la ligne de commande encore et encore (par exemple, vous exécutez à plusieurs reprises un script que vous avez écrit), vous pouvez appuyer sur la touche directionnelle `haut` dans la ligne de commande pour accéder aux commandes précédemment saisies! Appuyez sur `Entrée` après avoir trouvé la commande que vous souhaitez réexécuter et elle s'exécutera. Gain de temps assez pratique!
 
 ### 2.1.13. Création, déplacement et suppression de répertoires
 
@@ -254,7 +255,7 @@ Jusqu'à présent, nous avons travaillé avec des fichiers individuels, mais pas
 
 Les commandes `touch` ou `ni` que nous avons apprises jusqu'à présent ne fonctionnent pas pour les répertoires. 
 
-mkdir ("**m**a**k**e **dir**ectory") est la commande que vous utiliserez pour créer un nouveau répertoire. Essayez de créer un répertoire vide nommé `test` dans notre répertoire personnel avec la commande `mkdir test`:
+`mkdir` ("**m**a**k**e **dir**ectory") est la commande que vous utiliserez pour créer un nouveau répertoire. Essayez de créer un répertoire vide nommé `test` dans notre répertoire personnel avec la commande `mkdir test`:
 
 ![Création d'un répertoire nommé `test`](assets/images/ch02/create_dir_1.png)
 
@@ -282,7 +283,7 @@ Remettons notre répertoire `test` dans notre répertoire personnel avec la comm
 
 ![Confirmation du déplacement du répertoire `test` dans notre répertoire personnel](assets/images/ch02/move_dir_4.png)
 
-Notez que nous avons utilisé la même notation (`..`) que nous avons apprise plus haut afin de déplacer notre répertoire `test` dans le répertoire parent.
+Notez que nous avons utilisé la même notation `..` que nous avons apprise plus haut afin de déplacer notre répertoire `test` dans le répertoire parent.
 
 Déplaçons à présent notre fichier `bonjour.txt` dans notre nouveau répertoire `test` afin que ce dernier ne soit plus vide. À noter que le fichier `bonjour.txt` se trouve actuellement dans le répertoire `Music`.
 
@@ -294,7 +295,7 @@ Nous indiquons que nous souhaitons déplacer le fichier `bonjour.txt` se trouvan
 
 Cool n'est-ce pas? Nous pouvons utiliser la commande `ls` pour lister le contenu des répertoires `test` et `Music`, sans avoir à nous déplacer au préalable dans ces dossiers.
 
-Génial! Nous avons maintenant notre répertoire `test` contenant notre fichier `bonjour.txt`! Essayons à présent de supprimer le dossier `test` au complet.
+Génial! Nous avons maintenant notre répertoire `test` contenant notre fichier `bonjour.txt`. Essayons à présent de supprimer le dossier `test` au complet.
 
 #### Suppression de répertoires avec rm -r
 
@@ -316,13 +317,45 @@ Si vous êtes sous Windows, répondez à la question précédente en mettant `N`
 
 ![Annulation de la suppression du répertoire `test`](assets/images/ch02/rm_dir_windows_warning.png)
 
-Nous allons rajouter l'option `-r` à notre commande. Cela permettra d'indiquer que nous souhaitons supprimer notre dossier `test` et son contenu de manière récursive -- c'est-à-dire, supprimer non seulement le répertoire `test` mais aussi tout ce qu'il contient. Sans l'option `-r`, la suppression échoue car la ligne de commande ne sait pas si vous souhaitez tout supprimer dans le dossier ou pas. Avec `-r`, vous dites essentiellement, "Tu peux **TOUT** supprimer" dans le répertoire.
+Nous allons rajouter l'option `-r` à notre commande. Cela permettra d'indiquer que nous souhaitons supprimer notre dossier `test` et son contenu de manière récursive, c'est-à-dire supprimer non seulement le répertoire `test` mais aussi tout ce qu'il contient. Sans l'option `-r`, la suppression échoue car la ligne de commande ne sait pas si vous souhaitez tout supprimer dans le dossier ou pas. Avec `-r`, vous dites essentiellement, "Tu peux **TOUT** supprimer dans le répertoire `test` mon amie la ligne de commande".
 
 ![Suppression d'un répertoire non vide sous Windows](assets/images/ch02/rm_dir_good_windows.png)
 
 ![Suppression d'un répertoire non vide sous Linux](assets/images/ch02/rm_dir_good_linux.png) 
 
-![Suppression d'un répertoire non vide sous macOS](assets/images/ch02/rm_dir_good_macos.png) 
+![Suppression d'un répertoire non vide sous macOS](assets/images/ch02/rm_dir_good_macos.png)
+
+#### Copie de répertoires avec cp -r
+
+Pour copier un répertoire et son contenu de manière récursive, on utilise la même commande `cp` utilisée pour la copie de fichiers, simplement qu'on lui rajoute l'option `-r`.
+
+La syntaxe est la suivante: `cp -r NOM_DU_RÉPERTOIRE_À_COPIER NOM_DU_RÉPERTOIRE_COPIE`.
+
+Imaginons que nous avons un répertoire nommé `experiences` contenant deux fichiers `experience1.txt` et `experience2.txt`.
+
+##### Sous Linux/macOS
+
+```bash
+$ mkdir experiences
+$ touch experiences/experience1.txt
+$ touch experiences/experience2.txt
+```
+
+##### Sous Windows avec PowerShell
+
+```bash
+$ mkdir experiences
+$ ni experiences/experience1.txt
+$ ni experiences/experience2.txt
+```
+
+Pour copier notre répertoire `experiences` (et son contenu) et nommer le répertoire copie `backup-experiences`, nous allons exécuter la commande `cp` comme suit:
+
+```bash
+$ cp -r experiences backup-experiences
+```
+
+Magnifique!
 
 ### 2.1.14. Résumé
 
@@ -337,7 +370,7 @@ Bien qu'il existe de nombreuses commandes disponibles, en pratique, six d'entre 
 
 Ce qui est génial, c'est que vous savez maintenant comment utiliser chacune de ces commandes. Avec de la pratique, vous vous rendrez compte que cette approche s'avère beaucoup plus efficiente que l'utilisation d'une souris.
 
-Dans ce livre, je vous donnerai les commandes exactes à exécuter -- vous n'avez donc pas besoin d'être un expert en ligne de commande -- mais au fil du temps, c'est une bonne compétence pour tout développeur professionnel à développer.
+Dans ce livre, je vous donnerai les commandes exactes à exécuter. Vous n'avez donc pas besoin d'être un expert en ligne de commande, mais au fil du temps, c'est une bonne compétence pour tout développeur professionnel à développer.
 
 ## 2.2. Installation de Python 3
 
