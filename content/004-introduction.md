@@ -30,7 +30,7 @@ Django a hérité de l'approche «*batteries-included*» (*piles incluses*) de P
 
 Cette approche permet aux développeurs web de se concentrer sur ce qui rend leurs applications web uniques plutôt que d'avoir à réinventer la roue.
 
-En revanche, plusieurs frameworks populaires -- notamment *Flask* en Python et *Express* en JavaScript -- adoptent une approche de « *microframework* ». Ils ne fournissent que le strict minimum requis pour une simple page web et laissent au développeur le soin d'installer et de configurer des packages tiers pour répliquer les fonctionnalités de base du site web. Cette approche offre plus de flexibilité au développeur mais peut laisser également le champ libre à différents types de vulnérabilités de sécurité et à des structures de projets difficilement maintenables (surtout lorsqu'il s'agit d'un développeur débutant).
+En revanche, plusieurs frameworks populaires -- notamment *Flask* en Python et *Express* en JavaScript -- adoptent une approche de « *microframework* ». Ils ne fournissent que le strict minimum requis pour une simple page web et laissent au développeur le soin d'installer et de configurer des packages tiers pour répliquer les fonctionnalités de base du site web. Cette approche offre plus de flexibilité au développeur mais peut laisser également le champ libre à des structures de projets difficilement maintenables (surtout lorsqu'il s'agit d'un développeur débutant) et ouvrir la porte à différents types de vulnérabilités de sécurité.
 
 À ce jour, Django est en développement actif depuis plus de 15 ans, ce qui en fait un vétéran aux cheveux gris. Des millions de programmeurs ont déjà utilisé Django pour créer leurs sites web, ce qui est indéniablement une bonne chose. Le développement web est difficile. Cela n'a pas de sens de répéter le même code -- et les mêmes erreurs -- alors qu'une large communauté de développeurs brillants a déjà résolu ces problèmes pour nous.
 
@@ -42,11 +42,11 @@ Pour terminer, sachez que Django est le framework web Python le plus populaire. 
 
 Django est également un framework MVC, c'est-à-dire qu'il respecte l'architecture MVC (**M**odèle **V**ue **C**ontrôleur). Il s'agit d'un [patron de conception](https://fr.wikipedia.org/wiki/Patron_de_conception) (aussi appelé *design pattern*) qui va nous permettre de mieux structurer notre code, de mieux séparer les différentes parties (les données, la présentation et la logique).
 
-1. Tout ce qui relève de *l'interaction avec la source de données* sera géré par le *modèle*. La source de données est généralement une base de données, mais cela aurait pu bien être un fichier texte, un fichier Excel, etc.
+1. Tout ce qui relève de *l'interaction avec la source de données* sera géré par le *modèle*. La source de données est généralement une base de données, mais cela aurait pu être également un fichier texte, un fichier Excel, etc.
 2. La *vue* va se charger de *présenter/afficher les informations*.
 3. Le contrôleur sera *le chef d'orchestre, le connecteur*. C'est le *contrôleur* qui va demander au *modèle* de récupérer des données depuis la base de données et ensuite demander à la *vue* de les afficher.
 
-Dans le chapitre suivant, nous reviendrons un peu plus en détails sur le fonctionnement de l'architecture MVC. Ne vous inquiétez donc pas si cela à l'air flou pour l'instant.
+Dans le chapitre suivant, nous reviendrons un peu plus en détails sur le fonctionnement de l'architecture MVC. Ne vous inquiétez donc pas si cela à l'air flou à cette étape.
 
 ### 1.1.2. Ma fonctionnalité Django préférée
 
@@ -79,7 +79,7 @@ Certaines personnes préfèrent regarder des vidéos en lieu et place de lire. S
 
 Chacune des vidéos dure moins de 30 minutes afin de vous permettre de mieux assimiler les différentes notions abordées dans ladite vidéo.
 
-La formation est disponible à seulement *49$* via ce lien: [https://parlonscode.com/premiers-pas-avec-django](https://parlonscode.com/premiers-pas-avec-django).
+La formation est disponible à seulement *89$* via ce lien: [https://parlonscode.com/premiers-pas-avec-django](https://parlonscode.com/premiers-pas-avec-django).
 
 ## 1.4. Prérequis
 
@@ -107,7 +107,7 @@ Git est ce qu'on appelle un logiciel de gestion de versions. Il permet de tracke
 
 ### 1.4.4. Un environnement de développement opérationnel
 
-Pour ceux d'entre vous qui sont toujours là, je vais également supposer que vous avez déjà un environnement de développement opérationnel. Cela devrait normalement être le cas si vous avez déjà eu à écrire ne serait-ce que deux (2) ou trois (3) programmes en Python. [Le chapitre 2](#chapter-2) présente toutefois la procédure d'installation de l'interpréteur Python au niveau de Windows, Linux ou macOS afin d'être sûr que nous soyons sur la même longueur d'onde.
+Pour ceux d'entre vous qui sont toujours là, je vais également supposer que vous avez déjà un environnement de développement opérationnel. Cela devrait normalement être le cas si vous avez déjà eu à écrire ne serait-ce que deux (2) ou trois (3) programmes en Python. [Le chapitre 2](#chapter-2) présente toutefois la procédure d'installation de l'interpréteur Python au niveau de Windows, Linux et macOS afin d'être sûr que nous soyons sur la même longueur d'onde.
 
 Dans ce livre, j'utiliserai comme éditeur de code [Sublime Text 3](https://www.sublimetext.com/3), mais sentez-vous libre d'utiliser le logiciel (Editeur de code ou Environnement de développement intégré) avec lequel vous vous sentez le plus confortable: [PyCharm](https://www.jetbrains.com/pycharm/), [Visual Studio Code](https://code.visualstudio.com/), [Spyder](https://www.spyder-ide.org/), [PyDev](https://www.pydev.org/) ou même [Vim](https://www.vim.org/) en console suffirait pour les pros que vous êtes.
 

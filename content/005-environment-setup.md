@@ -16,7 +16,7 @@ Nous avons l'habitude d'avoir des programmes pour tout ce que nous voulons faire
 
 ![Explorateur de fichiers (Fenêtre Finder) sous macOS](assets/images/ch02/finder_window_mac_os.png)
 
-Il est possible de faire exactement la même chose avec la ligne de commande -- naviguer sur notre disque dur, créer de nouveaux fichiers et dossiers, supprimer des fichiers et dossiers -- nous n'aurons tout simplement pas d'interface graphique (en d'autres termes, nous n'aurons pas de jolis boutons et de listes déroulantes) et en lieu et place de cliquer, nous allons devoir saisir ce que nous voulons.
+Il est possible de faire exactement la même chose avec la ligne de commande --naviguer sur notre disque dur, créer de nouveaux fichiers et dossiers, supprimer des fichiers et dossiers-- nous n'aurons tout simplement pas d'interface graphique (en d'autres termes, nous n'aurons pas de jolis boutons et de listes déroulantes) et en lieu et place de cliquer, nous allons devoir saisir ce que nous voulons.
 
 Sur un Mac, la ligne de commande est disponible au travers d'un programme nommé *"Terminal"* situé dans `/Applications/Utilities`. Pour le trouver, ouvrez une nouvelle fenêtre *Finder*, ouvrez ensuite le répertoire *Applications*, faites défiler vers le bas pour ouvrir le répertoire *Utilities* et double-cliquez sur l'application appelée `Terminal`.
 
