@@ -1,6 +1,6 @@
 # 3. Application 1: Hello City
 
-*Alors, quelle heure est-il chez vous?*
+Dans ce troisième chapitre, nous verrons comment créer notre premier projet web Django. Il s'agira d'une application web assez simple *Hello City* permettant d'afficher l'heure actuelle dans votre ville de résidence. À la fin de ce chapitre, les notions de vues, de templates, de routage d'URLs et de layouts n'auront plus aucun secret pour vous.
 
 ## 3.1. Présentation du projet
 
