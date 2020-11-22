@@ -378,32 +378,34 @@ Enfin, les choses sérieuses peuvent démarrer!
 
 Comme nous allons le voir dans les lignes qui suivent, installer Python est la chose la plus facile qui puisse exister au monde! Je ne le dis pas uniquement pour ceux qui sont sous Windows, mais également pour les linuxiens et les fanatiques macOS.
 
-Quelque soit votre système d'exploitation, la première étape consiste à vous rendre sur le site officiel de Python: [https://www.python.org/](https://www.python.org/)
+Quelque soit votre système d'exploitation, la première étape consiste à vous rendre sur le site officiel de Python: [https://www.python.org/](https://www.python.org/).
 
 ### 2.2.1. Installation de Python sous Windows
 
-1. Cliquez sur le lien [*Downloads*](https://www.python.org/downloads/) au niveau du menu principal de la page d'accueil.
-2. Sélectionnez la version de Python que vous souhaitez installer. (Je vous conseille d'opter pour la dernière version en date. Au moment où j'écris ces lignes, il s'agit de la version **3.9**).
-3. Sans grande surprise, le téléchargement du fichier d'installation de Python va alors débuter.
+1. Survolez le lien [Downloads](https://www.python.org/downloads/) présent au niveau du menu principal de la page d'accueil.
+2. Vous devriez normalement voir un bouton `Python 3.X.Y` pour télécharger la dernière version en date de Python. Au moment où j'écris ces lignes, il s'agit de la version **3.9.0**.
+3. Cliquez à présent sur le bouton de téléchargement. Sans grande surprise, le téléchargement du fichier d'installation de Python va alors débuter.
 4. Une fois le téléchargement terminé, exécutez ensuite le fichier d'installation et suivez les différentes étapes. Pensez à cocher la case **Add Python 3.x to PATH** lors de l'installation afin que Python soit accessible en ligne de commande. Cela s'avéra utile plus tard lorsque nous allons commencer à créer nos projets [Django](https://www.djangoproject.com/).
-5. À présent, votre installation est normalement terminée.
-6. Histoire d'avoir confirmation, fermez PowerShell s'il est présentement ouvert, puis réouvrez-le afin que les changements apportés lors de l'installation soient pris en compte. Dans la nouvelle ligne de commande, exécutez la commande `python -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est un "V" majuscule et non un "v" minuscule.
+5. À cette étape, votre installation est normalement terminée.
+6. Histoire d'avoir confirmation, fermez PowerShell s'il est présentement ouvert, puis réouvrez-le afin que les changements apportés lors de l'installation soient pris en compte. Dans la nouvelle ligne de commande, exécutez la commande `python -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est `-V` avec un "V" majuscule et non un "v" minuscule.
 
 ![Ajout de l'exécutable de Python au PATH](assets/images/ch02/python_path_windows.png)
 
 ![Confirmation d'installation de Python sous Windows](assets/images/ch02/python_installed_windows.png)
 
-Si vous avez à faire un choix entre plusieurs liens d'installation, sélectionnez celui qui correspondra à votre type de processeur. Au cas où, vous ne connaissez pas le type de votre système (32 bits ou 64 bits), choisissez tout simplement la version `x86`. Si vous aimez également les vidéos, [celle-ci](https://www.youtube.com/video-installation-python-windows) fera l'affaire!
+<blockquote class="notice">
+    <p><strong>Version 32 bits ou 64 bits?</strong><br>Si vous avez à faire un choix entre plusieurs liens d'installation, sélectionnez celui qui correspondra à votre type de processeur. Au cas où, vous ne connaissez pas le type de votre système (32 bits ou 64 bits), choisissez tout simplement la version <code>x86</code>. Si vous aimez également les vidéos, <a href="https://www.youtube.com/video-installation-python-windows">celle-ci</a> fera l'affaire!</p>
+</blockquote>
 
 ### 2.2.2. Installation de Python sous Linux
 
 Sur la plupart des distributions Linux, Python est généralement pré-installé. Cependant, il est possible que vous n'ayez pas la dernière version en date.
 
 <blockquote class="notice">
-    <p><strong>Comment afficher la version de Python installée?</strong><br>Afin de connaitre la version de Python installée, tapez dans un terminal la commande: <code>python3 -V</code>. Attention, c'est un "V" majuscule et non un "v" minuscule.</p>
+    <p><strong>Comment afficher la version de Python installée?</strong><br>Afin de connaitre la version de Python installée, tapez dans un terminal la commande: <code>python3 -V</code>. Attention, c'est <code>-V</code> avec un "V" majuscule et non un "v" minuscule.</p>
 </blockquote>
 
-Il est très probable que ce soit une version comme 3.7 ou 3.8. Dans tous les cas, je vous conseille d'installer la dernière version en date de la branche `3.x`. Au moment où j'écris ces lignes, il s'agit de la version `3.9`.
+Il est très probable que ce soit une version comme `3.7` ou `3.8`. Dans tous les cas, je vous conseille d'installer la dernière version en date de la branche `3.x`. Au moment où j'écris ces lignes, il s'agit de la version `3.9`.
 
 Si vous avez une distribution Debian, exécutez les commandes suivantes:
 
@@ -412,15 +414,17 @@ $ sudo apt update
 $ sudo apt install -y build-essential zlib1g-dev libffi-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 ```
 
-Cliquez ensuite sur [Downloads](https://www.python.org/downloads/) et téléchargez la dernière version de Python. 
+Cliquez ensuite sur [Downloads](https://www.python.org/downloads/) et téléchargez la dernière version de Python. J'ai eu à choisir l'archive `.tar.xz`.
 
 Ouvrez un terminal, puis rendez-vous dans le dossier où se trouve l'archive:
 
-1. Décompressez l'archive en tapant: `tar xf Python-3.9.0.tar.xz` (cette commande est bien entendu à adapter suivant la version et le type de compression).
+1. Décompressez l'archive en tapant: `tar xf Python-3.9.0.tar.xz` (cette commande est bien entendu à adapter selon la version et le type de compression).
 2. Une fois la décompression terminée, vous devez vous rendre dans le dossier qui vient d'être créé dans le répertoire courant (`Python-3.9.0` dans mon cas): `cd Python-3.9.0`.
-3. Il faudra lancer le script de configuration en tapant `./configure --enable-optimizations` dans la console. Une fois que la configuration terminée, il n'y a plus qu'à compiler en exécutant la commande `make` puis la commande `sudo make altinstall` (en tant que root, super-utilisateur) pour installer Python à proprement dit.
+3. Il faudra lancer le script de configuration en tapant `./configure --enable-optimizations` dans la console.
+4. Une fois que la configuration terminée, il n'y a plus qu'à lancer la compilation en exécutant la commande `make`.
+5. La dernière étape consiste à exécuter la commande `sudo make altinstall` (en tant que root, super-utilisateur) pour installer Python à proprement dit.
 
-Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-le) afin que les changements apportés lors de l'installation soient pris en compte. Dans le nouveau terminal, exécutez la commande `python3.9 -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`.
+Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-le) afin que les changements apportés lors de l'installation soient pris en compte. Dans le nouveau terminal, exécutez la commande `python3.9 -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est `-V` avec un "V" majuscule et non un "v" minuscule.
 
 ![Confirmation d'installation de Python sous Linux](assets/images/ch02/python_installed_linux.png)
 
@@ -432,13 +436,12 @@ Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-l
 
 Sur le site officiel de Python, vous trouverez des paquetages pour macOS similaires à ceux proposés sous Windows.
 
-Téléchargez la dernière version en date.
-
-Faites ensuite un double-clic sur le fichier `.pkg` téléchargé `python-3.9.0-macosx10.9.pkg`.
-
-Suivez les différentes étapes de l'assistant d'installation et vous aurez Python installé sur votre précieux Mac.
-
-Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-le) afin que les changements apportés lors de l'installation soient pris en compte. Dans le nouveau terminal, exécutez la commande `python3 -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est un "V" majuscule et non un "v" minuscule.
+1. Survolez le lien [Downloads](https://www.python.org/downloads/) présent au niveau du menu principal de la page d'accueil.
+2. Vous devriez normalement voir un bouton `Python 3.X.Y` pour télécharger la dernière version en date de Python. Au moment où j'écris ces lignes, il s'agit de la version **3.9.0**.
+3. Cliquez à présent sur le bouton de téléchargement. Sans grande surprise, le téléchargement du fichier d'installation de Python va alors débuter. Dans mon cas, il s'agit d'un fichier `python-3.9.0-macosx10.9.pkg`.
+4. Une fois le téléchargement terminé, exécutez ensuite le fichier d'installation et suivez les étapes de l'assistant d'installation et vous aurez Python installé sur votre précieux Mac.
+5. À cette étape, votre installation est normalement terminée.
+6. Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-le) afin que les changements apportés lors de l'installation soient pris en compte. Dans le nouveau terminal, exécutez la commande `python3 -V` afin de voir la version de Python installée au niveau de votre ordinateur. Cela devrait afficher quelque chose comme `Python 3.9.0`. Attention, c'est `-V` avec un "V" majuscule et non un "v" minuscule.
 
 ![Confirmation d'installation de Python sous macOS](assets/images/ch02/python_installed_mac.png)
 
@@ -450,11 +453,11 @@ Histoire d'avoir confirmation, redémarrez votre terminal (fermez et réouvrez-l
 
 L'installation de Sublime Text est super simple.
 
-Quelque soit votre système d'exploitation, la première étape consiste à vous rendre sur le site officiel de Sublime Text: [https://www.sublimetext.com/3](https://www.sublimetext.com/3)
+Quelque soit votre système d'exploitation, la première étape consiste à vous rendre sur le site officiel de Sublime Text: [https://www.sublimetext.com/3](https://www.sublimetext.com/3).
 
 Téléchargez ensuite la version appropriée en fonction de votre système d'exploitation.
 
-Suivez ensuite les différentes étapes de l'assistant d'installation et vous aurez *Sublime Text 3* installé sur votre ordinateur.
+Suivez après les différentes étapes de l'assistant d'installation et vous aurez *Sublime Text 3* installé sur votre ordinateur.
 
 ![Sublime Text 3](assets/images/ch02/sublime_text_3.png)
 
@@ -475,11 +478,11 @@ Auparavant, l'installation de librairies Python se faisait de façon manuelle. S
 1. Me rendre sur le site officiel de la librairie *X* (s'il existe bien évidemment).
 2. Télécharger le code Python de cette librairie *X*.
 3. Étant donné que les librairies étaient pour la grande majorité distribuées sous forme de fichiers compressés, il fallait après téléchargement, décompresser le fichier téléchargé.
-4. Placer ensuite le dossier obtenu à un emplacement dédié au niveau de mon ordinateur.
+4. Placer ensuite le dossier obtenu après décompression à un emplacement dédié au niveau de mon ordinateur.
 5. Tenter de le charger au niveau de mon projet.
 6. Régler les problèmes éventuels d'importation, etc...
 
-Le problème avec cette façon de fonctionner, c'est qu'il fallait refaire la même chose à chaque fois qu'une nouvelle version de la librairie était rendue disponible. Pénible n'est-ce pas ?
+Le problème avec cette façon de fonctionner, c'est qu'il fallait repasser par ce même procédé à chaque fois qu'une nouvelle version de la librairie était rendue disponible. Pénible n'est-ce pas?
 
 ### 2.4.2. Pip, un gestion de dépendances
 
@@ -494,9 +497,9 @@ Donc si nous voulons installer une librairie Python, nous allons le faire aujour
 
 Ces outils *bundler*, *composer*, *npm*, *yarn*, *pip* sont appelés gestionnaires de dépendances car ils vont nous permettre de gérer les dépendances de nos projets.
 
-Les projets Django que nous allons créer dès le prochain chapitre vont dépendre de Django. Django sera donc **une dépendance** de chacun de ces projets. Si nous avons besoin de faire du traitement d'images, il existe une librairie Python très populaire nommée *Pillow* que nous pouvons utiliser. Si nous installons la librairie *Pillow*, elle deviendra également une dépendance de notre projet et ainsi de suite.
+Les projets Django que nous allons créer dès le prochain chapitre vont dépendre de Django. Django sera donc **une dépendance** de chacun de ces projets. Si nous avons besoin de faire du traitement d'images, il existe une librairie Python très populaire nommée *Pillow* que nous pouvons utiliser. Si nous installons la librairie *Pillow*, elle deviendra également une *dépendance* de notre projet et ainsi de suite.
 
-L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de nouvelles versions de nos dépendances se fera de manière ultra simple. On change la version et bang tout marche!
+L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de nouvelles versions de nos dépendances se fera de manière ultra simple. On change la version, on exécute la commande de mise à jour et bang tout marche!
 
 Ready? Installons donc sans plus tarder *pip*.
 
@@ -531,13 +534,13 @@ PyPI vous aide à trouver et installer des packages développés et partagés pa
 
 Le site officiel de PyPI est [https://pypi.org/](https://pypi.org/).
 
-Au moment où j'écris ces lignes, il y a plus de **268 557** projets publiés.
+Au moment où j'écris ces lignes, il y a plus de **273 518** projets publiés.
 
 ![Site officiel de PyPI](assets/images/ch02/pypi_website.png)
 
 ### 2.4.5. Installation du module python-slugify
 
-Nous allons installé le module `python-slugify` afin de voir de manière pratique comment installer une librairie avec `pip`.
+Nous allons installer le module `python-slugify` afin de voir de manière pratique comment installer une librairie avec `pip`.
 
 Le module `python-slugify` est un module assez simple permettant de créer un slug à partir d'une chaîne de caractères. Par exemple, la chaîne de caractères `"Django eSt cOol"` deviendra `"django-est-cool"`.
 
@@ -562,6 +565,10 @@ Successfully installed python-slugify-4.0.1 text-unidecode-1.3
 ```
 
 Exécutez la commande indiquée pour mettre à jour `pip` si vous avez ce message de warning: **WARNING: You are using pip version x.y.z, however version a.b.c is available. You should consider upgrading via the 'pip install --upgrade pip' command**.
+
+<blockquote class="notice">
+    <p><strong>Besoin de mettre à jour pip?</strong><br>Exécutez la commande indiquée pour mettre à jour <code>pip</code> si vous avez ce message de warning: <code>WARNING: You are using pip version x.y.z, however version a.b.c is available. You should consider upgrading via the 'pip install --upgrade pip' command</code>.</p>
+</blockquote>
 
 Vous pouvez également utiliser les commandes `pip3 freeze` ou `pip3 list` afin de lister toutes les dépendances installées sur votre système avec leurs versions respectives. La librairie `python-slugify` devrait se trouver dans cette liste après installation.
 
@@ -611,11 +618,12 @@ Pour quitter le shell interactif, il suffit de taper `exit()` ou encore `quit()`
 </blockquote>
 
 Et voilà! Assez simple n'est-ce pas?
-Même si cela fonctionne, je n'aime pas cette manière d'installer les librairies. En effet, tel que nous avons procédé, la librairie `python-slugify` a été installée de manière globale sur mon système. En pratique, on préfère installer nos librairies dans ce qu'on appelle des environnements virtuels (environnements isolés). Nous verrons en détails le principe de fonctionnement des environnements virtuels dès le prochain chapitre. Mais si vous devez retenir quelque chose de cette section, c'est que même s'il est possible d'installer nos dépendances de manière globale au niveau de notre système, il est généralement recommandé de les installer dans des environnements virtuels, ce qui nous simplifiera grandement la tâche lorsque nous serons rendus à travailler sur différents projets nécessitant chacun une version spécifique de cette dépendance.
+
+Même si cela fonctionne, je n'aime pas cette manière d'installer les librairies. En effet, tel que nous avons procédé, la librairie `python-slugify` a été installée de manière globale sur mon système. En pratique, on préfère installer nos librairies dans ce qu'on appelle des **environnements virtuels** (environnements isolés). Nous verrons en détails le principe de fonctionnement des environnements virtuels dès le prochain chapitre. Mais si vous devez retenir quelque chose de cette section, c'est que même s'il est possible d'installer nos dépendances de manière globale au niveau de notre système, il est généralement recommandé de les installer dans des environnements virtuels, ce qui nous simplifiera grandement la tâche lorsque nous serons rendus à travailler sur différents projets nécessitant chacun une version différente de cette dépendance.
 
 ## 2.5. Félicitations!
 
-Est-ce vrai ce qu'on dit? Python est installé sur votre machine? Sublime Text ou PyCharm ou VS Code ou ... aussi? Vous savez également comment installer une librairie en utilisant pip?
+Est-ce vrai ce qu'on dit? Python est installé sur votre ordinateur? Sublime Text, PyCharm ou VS Code aussi? Vous savez comment utiliser la ligne de commande? Waouh! Vous savez également comment installer une librairie via pip?
 
 Qu'est-ce qu'on attend donc pour créer notre premier projet Django?
 
@@ -637,8 +645,8 @@ Dans ce second chapitre, nous avons appris que:
 - Le gestionnaire de dépendances le plus utilisé au niveau de Python est *pip*.
 - On appelle *dépendances* les librairies dont dépendent nos projets.
 - L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de mises à jour de nos dépendances se fera aisément.
-- Pour installer un module avec pip, on utilise la commande `pip install`.
-- Pour lister l'ensemble des modules installés, on utilise la commande `pip freeze` ou `pip list`.
-- Pour avoir des informations sur un module spécifique, on utilise la commande `pip show`.
+- Pour installer un module avec pip, on utilise la commande `pip3 install`.
+- Pour lister l'ensemble des modules installés, on utilise la commande `pip3 freeze` ou `pip3 list`.
+- Pour avoir des informations sur un module spécifique, on utilise la commande `pip3 show`.
 - Même s'il est possible d'installer nos dépendances de manière globale au niveau de notre système, il est généralement recommandé de les installer dans des environnements virtuels, ce qui nous simplifiera grandement la tâche lorsque nous serons rendus à travailler sur différents projets nécessitant chacun une version différente de cette dépendance.
 
