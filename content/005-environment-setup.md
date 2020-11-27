@@ -18,22 +18,22 @@ Nous avons l'habitude d'avoir des programmes pour tout ce que nous voulons faire
 
 Il est possible de faire exactement la même chose avec la ligne de commande: naviguer sur notre disque dur, créer de nouveaux fichiers et dossiers, supprimer des fichiers et dossiers. Nous n'aurons tout simplement pas d'interface graphique (en d'autres termes, nous n'aurons pas de jolis boutons et de listes déroulantes) et en lieu et place de cliquer, nous allons devoir saisir ce que nous voulons.
 
-Sur un Mac, la ligne de commande est disponible au travers d'un programme nommé *Terminal* situé dans `/Applications/Utilities`. Pour la trouver, ouvrez une nouvelle fenêtre *Finder*, puis ouvrez ensuite le répertoire *Applications*, faites défiler vers le bas pour ouvrir le répertoire *Utilities* et double-cliquez sur l'application appelée `Terminal`.
+Sur un Mac, la ligne de commande est disponible au travers d'un programme nommé _Terminal_ situé dans `/Applications/Utilities`. Pour la trouver, ouvrez une nouvelle fenêtre _Finder_, puis ouvrez ensuite le répertoire _Applications_, faites défiler vers le bas pour ouvrir le répertoire _Utilities_ et double-cliquez sur l'application appelée `Terminal`.
 
 ![Trouver l'application Terminal via Finder](assets/images/ch02/find_terminal_app_via_finder.png)
 
-Il est également possible d'ouvrir le terminal en utilisant la recherche *Spotlight*. Utilisez le raccourci clavier `CMD + Espace` et entrez *Terminal* au niveau du champ de recherche. Vous pouvez à présent cliquer sur l'application s'affichant en première position dans les résultats de recherche.
+Il est également possible d'ouvrir le terminal en utilisant la recherche _Spotlight_. Utilisez le raccourci clavier `CMD + Espace` et entrez _Terminal_ au niveau du champ de recherche. Vous pouvez à présent cliquer sur l'application s'affichant en première position dans les résultats de recherche.
 
 ![Trouver l'application Terminal via Spotlight](assets/images/ch02/find_terminal_app_via_spotlight.png)
 
-Sur les machines Windows, il existe par défaut deux programmes vous permettant d'accéder à la ligne de commande: **CMD (Invite de commandes)** et **PowerShell**, *PowerShell* étant le plus puissant des deux. 
-Pour ce livre, j'ai fais le choix d'utiliser *PowerShell* mais *CMD* aurait également fait l'affaire.
+Sur les machines Windows, il existe par défaut deux programmes vous permettant d'accéder à la ligne de commande: **CMD (Invite de commandes)** et **PowerShell**, _PowerShell_ étant le plus puissant des deux.
+Pour ce livre, j'ai fais le choix d'utiliser _PowerShell_ mais _CMD_ aurait également fait l'affaire.
 
 ![L'invite de commandes sous Windows](assets/images/ch02/cmd_windows.png)
 
 ![PowerShell](assets/images/ch02/powershell_windows.png)
 
-Sous Linux, la ligne de commande est généralement disponible au travers d'un programme nommé *Terminal*, mais bien évidemment cela peut changer d'une distribution Linux à une autre. Je vous inviterai donc à faire une petite recherche Google afin de trouver le programme à exécuter en fonction de votre distribution Linux.
+Sous Linux, la ligne de commande est généralement disponible au travers d'un programme nommé _Terminal_, mais bien évidemment cela peut changer d'une distribution Linux à une autre. Je vous inviterai donc à faire une petite recherche Google afin de trouver le programme à exécuter en fonction de votre distribution Linux.
 
 ![L'application Terminal sous Ubuntu 20.04](assets/images/ch02/terminal_ubuntu.png)
 
@@ -47,17 +47,17 @@ Bien qu'il existe de nombreuses commandes disponibles, vous n'avez pas besoin de
 
 ### 2.1.1. Qu'est-ce que Unix?
 
-Windows, macOS et Linux sont ce qu'on appelle des systèmes d'exploitation. En informatique, un système d'exploitation (souvent abrégé **OS**, de l'anglais *Operating System*) est un ensemble de programmes gérant l'utilisation des ressources d'un ordinateur par le biais de logiciels applicatifs. En d'autres termes, le système d'exploitation est un peu comme le chef d'orchestre. C'est lui qui doit gérer la mémoire de votre ordinateur, la répartir entre tous les programmes. Il fait en quelque sorte le lien entre votre matériel (carte graphique, mémoire, etc) et vos logiciels.
+Windows, macOS et Linux sont ce qu'on appelle des systèmes d'exploitation. En informatique, un système d'exploitation (souvent abrégé **OS**, de l'anglais _Operating System_) est un ensemble de programmes gérant l'utilisation des ressources d'un ordinateur par le biais de logiciels applicatifs. En d'autres termes, le système d'exploitation est un peu comme le chef d'orchestre. C'est lui qui doit gérer la mémoire de votre ordinateur, la répartir entre tous les programmes. Il fait en quelque sorte le lien entre votre matériel (carte graphique, mémoire, etc) et vos logiciels.
 
-Unix est précisement, une famille de systèmes d'exploitation, dont macOS et Linux font partie. Pour faire simple, vous pouvez voir Unix comme l'ancêtre de Linux et macOS. De nombreux tutoriels en ligne appellent la ligne de commande, « *la ligne de commande Unix* », car macOS, Linux et d'autres systèmes d'exploitation partagent le même ensemble de commandes pour parler à leur ordinateur. Si vous avez donc Linux ou macOS, la grande majorité des commandes de base à taper seront identiques.
+Unix est précisement, une famille de systèmes d'exploitation, dont macOS et Linux font partie. Pour faire simple, vous pouvez voir Unix comme l'ancêtre de Linux et macOS. De nombreux tutoriels en ligne appellent la ligne de commande, « _la ligne de commande Unix_ », car macOS, Linux et d'autres systèmes d'exploitation partagent le même ensemble de commandes pour parler à leur ordinateur. Si vous avez donc Linux ou macOS, la grande majorité des commandes de base à taper seront identiques.
 
 L'exception est Windows, qui a décidé de faire les choses de manière légèrement différente. Ainsi, certaines commandes à taper seront différentes dépendamment du fait que vous soyez sous Windows ou Linux/macOS. Je vous les indiquerai au fur et à mesure, ne vous inquiétez donc pas.
 
 ### 2.1.2. Accéder à un terminal Linux sur Windows
 
-Cette étape est optionnelle, mais si cela vous intéresse, sachez qu'aujourd'hui, grâce au *sous-système Windows pour Linux* (en anglais *WSL* pour *Windows Subsystem for Linux*), il est possible d'accéder à un terminal Linux directement sous Windows. Les développeurs Windows peuvent donc développer des applications multiplateformes et gérer leur infrastructure informatique sans quitter Windows. **À noter que le WSL n'est disponible qu'à partir de Windows 10**.
+Cette étape est optionnelle, mais si cela vous intéresse, sachez qu'aujourd'hui, grâce au _sous-système Windows pour Linux_ (en anglais _WSL_ pour _Windows Subsystem for Linux_), il est possible d'accéder à un terminal Linux directement sous Windows. Les développeurs Windows peuvent donc développer des applications multiplateformes et gérer leur infrastructure informatique sans quitter Windows. **À noter que le WSL n'est disponible qu'à partir de Windows 10**.
 
-Le WSL, également appelé *Bash sous Windows*, vous donne accès à une distribution Linux en mode ligne de commande fonctionnant comme une application Windows standard. Ainsi, vous serez donc capables d'exécuter des commandes Linux (en d'autres termes des commandes Unix) sans aucune difficulté.
+Le WSL, également appelé _Bash sous Windows_, vous donne accès à une distribution Linux en mode ligne de commande fonctionnant comme une application Windows standard. Ainsi, vous serez donc capables d'exécuter des commandes Linux (en d'autres termes des commandes Unix) sans aucune difficulté.
 
 ![Accès à la ligne de commande Ubuntu 20.04 grâce au WSL](assets/images/ch02/ubuntu_20_04_wsl.png)
 
@@ -77,7 +77,7 @@ Je pense qu'il est maintenant temps de découvrir la puissance cachée de la lig
 
 Dans l'exemple ci-dessus, vous pouvez remarquer que mon nom d'utilisateur est `freedev` et que mon nom d'ordinateur est `DESKTOP-R6JUUT1`. La syntaxe est la suivante `nom_utilisateur@nom_ordinateur`. Vous verrez donc quelque chose de différent en fonction de vos informations personnelles.
 
-Le signe dollar `$` à la fin est ce qu'on appelle *l'invite de commandes* ou encore le *prompt*. Sa présence indique que vous pouvez entrer la commande que vous souhaitez. Dans ce livre, tout comme dans de nombreux tutoriels de programmation en ligne, vous verrez afficher les commandes que vous devez taper dans votre ligne de commande comme suit:
+Le signe dollar `$` à la fin est ce qu'on appelle _l'invite de commandes_ ou encore le _prompt_. Sa présence indique que vous pouvez entrer la commande que vous souhaitez. Dans ce livre, tout comme dans de nombreux tutoriels de programmation en ligne, vous verrez afficher les commandes que vous devez taper dans votre ligne de commande comme suit:
 
 ```bash
 $ la_commande_à_taper
@@ -85,17 +85,17 @@ $ la_commande_à_taper
 
 Le signe dollar `$` est utilisé afin de faire fi de vos informations personnelles et vous indiquer que vous êtes dans la ligne de commande et c'est l'endroit au niveau duquel vous allez taper vos différentes commandes.
 
-Après les deux points `:`, nous avons le répertoire courant. En d'autres termes, le dossier dans lequel nous nous trouvons actuellement. Le tilda `~` ici fait référence à notre *répertoire utilisateur* encore appelé *répertoire personnel*. Sous Windows, c'est un peu comme l'équivalent de `C:\Users\votre_nom_d_utilisateur` ou encore `C:\Utilisateurs\votre_nom_d_utilisateur`.
+Après les deux points `:`, nous avons le répertoire courant. En d'autres termes, le dossier dans lequel nous nous trouvons actuellement. Le tilda `~` ici fait référence à notre _répertoire utilisateur_ encore appelé _répertoire personnel_. Sous Windows, c'est un peu comme l'équivalent de `C:\Users\votre_nom_d_utilisateur` ou encore `C:\Utilisateurs\votre_nom_d_utilisateur`.
 
 ![Le prompt sur PowerShell](assets/images/ch02/powershell_windows.png)
 
 Au niveau de PowerShell, le prompt est un peu différent. Il est symbolisé par le signe supérieur `>` et on ne voit pas afficher le nom d'utilisateur et le nom d'ordinateur, juste le chemin du dossier dans lequel nous nous trouvons actuellement. Dans mon cas, il s'agit de `C:\Users\freedev`.
 
-Vous devrez entrer les commandes présentées dans les sections suivantes au niveau de *PowerShell* si vous avez Windows ou au niveau de l'application *Terminal* si vous avez Linux/macOS. Pour raison de concision, je montrai uniquement en images, les résultats d'exécution des commandes au niveau de *PowerShell*, mais vous devez avoir des résultats quasi similaires si vous avez Linux ou macOS.
+Vous devrez entrer les commandes présentées dans les sections suivantes au niveau de _PowerShell_ si vous avez Windows ou au niveau de l'application _Terminal_ si vous avez Linux/macOS. Pour raison de concision, je montrai uniquement en images, les résultats d'exécution des commandes au niveau de _PowerShell_, mais vous devez avoir des résultats quasi similaires si vous avez Linux ou macOS.
 
 ### 2.1.4. La commande ls
 
-La première commande que nous allons apprendre est la commande `ls`, qui est l'abréviation de *list*. Cette commande permet de lister les fichiers et dossiers présents dans notre répertoire courant.
+La première commande que nous allons apprendre est la commande `ls`, qui est l'abréviation de _list_. Cette commande permet de lister les fichiers et dossiers présents dans notre répertoire courant.
 
 Vous remarquerez que les commandes sont raccourcies pour être aussi courtes que possible, ce qui sera utile lorsque vous serez à l'aise avec ces commandes et que vous les taperez à plusieurs reprises. Cela fera moins de caractères à taper!
 
@@ -113,21 +113,21 @@ La ligne de commande démarre généralement dans notre répertoire utilisateur.
 
 ### 2.1.5. La commande cd
 
-De la même manière que grâce à l'explorateur de fichiers, vous pouvez double-cliquer par exemple sur « *Pictures* » afin d'ouvrir ce dossier (on parle également de *répertoire* en lieu et place de dossier), au niveau de la ligne de commande, vous pouvez utiliser la commande `cd` (« *change directory*, changer de répertoire en anglais ») afin *d'ouvrir* un répertoire.
+De la même manière que grâce à l'explorateur de fichiers, vous pouvez double-cliquer par exemple sur « _Pictures_ » afin d'ouvrir ce dossier (on parle également de _répertoire_ en lieu et place de dossier), au niveau de la ligne de commande, vous pouvez utiliser la commande `cd` (« _change directory_, changer de répertoire en anglais ») afin _d'ouvrir_ un répertoire.
 
 ![Déplacement dans le répertoire *Pictures*](assets/images/ch02/cd_output.png)
 
-Dans la capture d'écran de la ligne de commande, j'ai fait un `cd` dans le dossier *Pictures*. Utilisez à présent votre imagination, vous venez d'entrer dans le répertoire *Pictures*. La ligne de commande a été mise à jour pour indiquer que vous êtes actuellement *dans* le répertoire *Pictures*. Une fois dans le répertoire *Pictures*, comme nous l'avons fait précédemment avec l'explorateur de fichiers, vous pouvez utiliser la commande `ls` pour voir le contenu de ce répertoire. Mon dossier *Pictures* contient deux sous-dossiers *Camera Roll* et *Saved Pictures*.
+Dans la capture d'écran de la ligne de commande, j'ai fait un `cd` dans le dossier _Pictures_. Utilisez à présent votre imagination, vous venez d'entrer dans le répertoire _Pictures_. La ligne de commande a été mise à jour pour indiquer que vous êtes actuellement _dans_ le répertoire _Pictures_. Une fois dans le répertoire _Pictures_, comme nous l'avons fait précédemment avec l'explorateur de fichiers, vous pouvez utiliser la commande `ls` pour voir le contenu de ce répertoire. Mon dossier _Pictures_ contient deux sous-dossiers _Camera Roll_ et _Saved Pictures_.
 
 Dans l'explorateur de fichiers, vous pouvez double-cliquer n'importe où et voir le contenu des différents dossiers. L'explorateur de fichiers est, essentiellement, un `cd` et `ls` dans les coulisses, qui affiche les résultats dans une représentation graphique beaucoup plus jolie, plutôt que d'utiliser simplement du texte.
 
-Nous pouvons à nouveau utiliser `cd` et `ls` pour consulter le contenu du sous-dossier *Camera Roll* présent dans le répertoire *Pictures*:
+Nous pouvons à nouveau utiliser `cd` et `ls` pour consulter le contenu du sous-dossier _Camera Roll_ présent dans le répertoire _Pictures_:
 
 ![Déplacement dans le sous-répertoire *Camera Roll*](assets/images/ch02/cd_output_2.png)
 
-Le dossier *Camera Roll* est présentement vide, raison pour laquelle rien n'a été affiché après exécution de la commande `ls`.
+Le dossier _Camera Roll_ est présentement vide, raison pour laquelle rien n'a été affiché après exécution de la commande `ls`.
 
-Si vous avez un nom de répertoire qui contient des espaces, il faudra l'indiquer entre les guillemets `""` comme nous l'avons fait pour *Camera Roll*: `cd "Camera Roll"`.
+Si vous avez un nom de répertoire qui contient des espaces, il faudra l'indiquer entre les guillemets `""` comme nous l'avons fait pour _Camera Roll_: `cd "Camera Roll"`.
 
 Attendez, nous ne faisons qu'avancer? Comment pouvons-nous retourner là où nous étions avant?
 
@@ -152,6 +152,10 @@ Petite astuce! À partir de l'explorateur de fichiers, vous pouvez faire un `cd`
 ![Déplacement dans un répertoire via un glisser-déposer](assets/images/ch02/cd_drag_drop.png)
 
 Il ne vous reste plus qu'à appuyer sur la touch `Entrée`.
+
+<blockquote class="notice">
+    <p><strong>Note:</strong> Vous avez probablement remarqué que lorsqu'on a eu à faire un glisser-déposer le chemin a été spécifié de manière légèrement différente. En effet, c'est ce qu'on appelle un <b>chemin absolu</b> car le chemin est spécifié depuis la racine <code>C:\</code>. Nous avons jusque-là utilisé des <em>chemins relatifs</em>, qui sont des chemins relatifs à notre emplacement actuel.</p>
+</blockquote>
 
 Dans les sections suivantes, les choses commenceront à devenir passionnantes. Nous utiliserons la ligne de commande afin de créer, déplacer et supprimer des fichiers sur notre disque dur.
 
@@ -179,7 +183,7 @@ En lieu et place de le faire via l'explorateur de fichiers, déplaçons-le dans 
 
 ### 2.1.8. Déplacement des fichiers
 
-Pour déplacer un fichier, on utilise la commande `mv`. 
+Pour déplacer un fichier, on utilise la commande `mv`.
 
 `mv` est le diminutif de **m**o**v**e qui veut dire déplacer en anglais. Il y a d'autres choses que nous devons ajouter à la commande `mv` pour que l'ordinateur sache quel fichier nous souhaitons déplacer et où nous souhaitons le déplacer. La syntaxe est la suivante: `mv NOM_DU_FICHER_À_DÉPLACER OÙ_DÉPLACER_LE_FICHIER`.
 
@@ -217,7 +221,7 @@ Pour l'instant, avouez que c'est idiot d'avoir deux fichiers vides. Apprenons do
 
 ### 2.1.10. Suppression de fichiers
 
-Cette partie est assez effrayante. Lorsque vous supprimez des fichiers à l'aide de la ligne de commande, il ne sont pas mis dans une corbeille ou un bac de recyclage. **Ils sont juste supprimés!** Il n'est donc pas possible d'annuler une suppression accidentelle. C'est là qu'un système de contrôle de versions comme *Git* serait utile. Je vous recommande fortement de l'utiliser avec tous vos projets informatiques afin que vous puissiez enregistrer vos différentes modifications et faire des restaurations à partir d'une sauvegarde si le besoin se fait ressentir. Nous verrons de manière pratique comment utiliser *Git*, ne vous inquiétez donc pas.
+Cette partie est assez effrayante. Lorsque vous supprimez des fichiers à l'aide de la ligne de commande, il ne sont pas mis dans une corbeille ou un bac de recyclage. **Ils sont juste supprimés!** Il n'est donc pas possible d'annuler une suppression accidentelle. C'est là qu'un système de contrôle de versions comme _Git_ serait utile. Je vous recommande fortement de l'utiliser avec tous vos projets informatiques afin que vous puissiez enregistrer vos différentes modifications et faire des restaurations à partir d'une sauvegarde si le besoin se fait ressentir. Nous verrons de manière pratique comment utiliser _Git_, ne vous inquiétez donc pas.
 
 Nous savons que notre fichier `hello.txt` est inutile, car il s'agit d'une copie de notre fichier d'origine `bonjour.txt`. Supprimons-le en utilisant la commande `rm`. `rm` est le diminutif de **r**e**m**ove qui veut dire supprimer en anglais.
 
@@ -225,7 +229,7 @@ La commande `rm` permet de supprimer un fichier et s'utilise comme suit: `rm NOM
 
 ![Suppression du fichier `hello.txt`](assets/images/ch02/delete_file.png)
 
-Désolé! Pendant tout ce temps, je vous ai demandé de tout taper. Il existe cependant quelques petites astuces de saisie semi-automatique (on parle également *d'autocomplétion*) et d'autres outils que vous pouvez utiliser pour gagner du temps lors de la saisie de commandes ou éviter des fautes de frappe.
+Désolé! Pendant tout ce temps, je vous ai demandé de tout taper. Il existe cependant quelques petites astuces de saisie semi-automatique (on parle également _d'autocomplétion_) et d'autres outils que vous pouvez utiliser pour gagner du temps lors de la saisie de commandes ou éviter des fautes de frappe.
 
 ### 2.1.11. Tabulation pour avoir de l'autocomplétion
 
@@ -235,7 +239,7 @@ Essayons de nouveau de déplacer un fichier avec `mv`. Rappelez-vous, la command
 
 ![Autocomplétion du nom de fichier `bonjour.txt`](assets/images/ch02/autocompletion.png)
 
-Au niveau de Windows, vous remarquerez qu'un (`.\`) est ajouté comme préfixe lors de l'autocomplétion. Le point fait référence au répertoire dans lequel nous nous trouvons présentement, on parle également de répertoire courant. Ainsi, mettre `.\bonjour.txt` revient à dire que le fichier `bonjour.txt` se trouve dans le répertoire courant (dans mon cas `C:\Users\freedev`). Donc si l'on résume, le point `.` permet de faire référence au répertoire courant et les deux points `..` permettent de faire référence au répertoire parent.  
+Au niveau de Windows, vous remarquerez qu'un (`.\`) est ajouté comme préfixe lors de l'autocomplétion. Le point fait référence au répertoire dans lequel nous nous trouvons présentement, on parle également de répertoire courant. Ainsi, mettre `.\bonjour.txt` revient à dire que le fichier `bonjour.txt` se trouve dans le répertoire courant (dans mon cas `C:\Users\freedev`). Donc si l'on résume, le point `.` permet de faire référence au répertoire courant et les deux points `..` permettent de faire référence au répertoire parent.
 
 <blockquote class="notice">
     <p><strong>Note:</strong> Si l'autocomplétion ne fonctionne pas et que vous entendez ce triste son <em>doot</em> si vous avez vos haut-parleurs allumés, cela signifie que la saisie semi-automatique ne voit aucun nom de fichier/dossier commençant par les lettres que vous avez tapées jusqu'à présent, donc il ne pouvait pas trouver le fichier ou l'emplacement spécifié. Cela pourrait également signifier qu'il existe plusieurs fichiers/dossiers dont les noms commencent par ce que vous avez saisi. Vous devez donc entrer plus de caractères jusqu'à ce qu'il n'y ait plus d'ambiguïté pour que la saisie semi-automatique puisse trouver le fichier/dossier exact que vous recherchez.</p>
@@ -253,7 +257,7 @@ Jusqu'à présent, nous avons travaillé avec des fichiers individuels, mais pas
 
 #### Création de répertoires avec la commande mkdir
 
-Les commandes `touch` ou `ni` que nous avons apprises jusqu'à présent ne fonctionnent pas pour les répertoires. 
+Les commandes `touch` ou `ni` que nous avons apprises jusqu'à présent ne fonctionnent pas pour les répertoires.
 
 `mkdir` ("**m**a**k**e **dir**ectory") est la commande que vous utiliserez pour créer un nouveau répertoire. Essayez de créer un répertoire vide nommé `test` dans notre répertoire personnel avec la commande `mkdir test`:
 
@@ -305,9 +309,9 @@ Tout d'abord, essayons d'utiliser la commande de suppression `rm` telle quelle e
 
 ![Échec de suppression du répertoire `test` sous Windows](assets/images/ch02/rm_dir_windows.png)
 
-![Échec de suppression du répertoire `test` sous Linux](assets/images/ch02/rm_dir_linux.png) 
+![Échec de suppression du répertoire `test` sous Linux](assets/images/ch02/rm_dir_linux.png)
 
-![Échec de suppression du répertoire `test` sous macOS](assets/images/ch02/rm_dir_macos.png) 
+![Échec de suppression du répertoire `test` sous macOS](assets/images/ch02/rm_dir_macos.png)
 
 **Impossible de supprimer le répertoire car c'est un répertoire! Que faire?**
 
@@ -321,7 +325,7 @@ Nous allons rajouter l'option `-r` à notre commande. Cela permettra d'indiquer 
 
 ![Suppression d'un répertoire non vide sous Windows](assets/images/ch02/rm_dir_good_windows.png)
 
-![Suppression d'un répertoire non vide sous Linux](assets/images/ch02/rm_dir_good_linux.png) 
+![Suppression d'un répertoire non vide sous Linux](assets/images/ch02/rm_dir_good_linux.png)
 
 ![Suppression d'un répertoire non vide sous macOS](assets/images/ch02/rm_dir_good_macos.png)
 
@@ -361,12 +365,12 @@ Magnifique!
 
 Bien qu'il existe de nombreuses commandes disponibles, en pratique, six d'entre elles sont utilisées le plus fréquemment dans le développement Django:
 
-- `cd` (changer de répertoire)
-- `cd ..` (retourner dans le répertoire parent)
-- `ls` (lister les fichiers et dossiers présents dans le répertoire courant)
-- `pwd` (afficher le chemin du répertoire courant)
-- `mkdir` (créer un nouveau dossier)
-- `touch` ou `ni` (créer un nouveau fichier)
+-   `cd` (changer de répertoire)
+-   `cd ..` (retourner dans le répertoire parent)
+-   `ls` (lister les fichiers et dossiers présents dans le répertoire courant)
+-   `pwd` (afficher le chemin du répertoire courant)
+-   `mkdir` (créer un nouveau dossier)
+-   `touch` ou `ni` (créer un nouveau fichier)
 
 Ce qui est génial, c'est que vous savez maintenant comment utiliser chacune de ces commandes. Avec de la pratique, vous vous rendrez compte que cette approche s'avère beaucoup plus efficiente que l'utilisation d'une souris.
 
@@ -457,26 +461,27 @@ Quelque soit votre système d'exploitation, la première étape consiste à vous
 
 Téléchargez ensuite la version appropriée en fonction de votre système d'exploitation.
 
-Suivez après les différentes étapes de l'assistant d'installation et vous aurez *Sublime Text 3* installé sur votre ordinateur.
+Suivez après les différentes étapes de l'assistant d'installation et vous aurez _Sublime Text 3_ installé sur votre ordinateur.
 
 ![Sublime Text 3](assets/images/ch02/sublime_text_3.png)
 
 ## 2.4. Premiers pas avec Pip
 
-Python dispose d'un éventail de modules et packages au travers de la [Python Standard Library ou PSL](https://docs.python.org/3/library/) (*Librairie Standard Python* pour les allergiques à la langue de Shakespeare).
+Python dispose d'un éventail de modules et packages au travers de la [Python Standard Library ou PSL](https://docs.python.org/3/library/) (_Librairie Standard Python_ pour les allergiques à la langue de Shakespeare).
 
 C'est le cas par exemple des modules:
-- `math` qui comporte comme son nom l'indique des fonctions et constantes en rapport avec les mathématiques;
-- et `random` qui contient un tas de fonctions ayant attraits à tout ce qui est aléatoire (le monde du hasard si vous le souhaitez).
+
+-   `math` qui comporte comme son nom l'indique des fonctions et constantes en rapport avec les mathématiques;
+-   et `random` qui contient un tas de fonctions ayant attraits à tout ce qui est aléatoire (le monde du hasard si vous le souhaitez).
 
 Toutefois, des fois on a envie d'utiliser certains modules/packages qui ne se trouvent malheureusement pas au niveau de la PSL (c'est le cas par exemple de Django, Flask, etc). Comment procéder alors dans ce genre de situation?
 
 ### 2.4.1. Méthode préhistorique: Installation manuelle
 
-Auparavant, l'installation de librairies Python se faisait de façon manuelle. Si je voulais par exemple installer une librairie Python *X*, il allait me falloir:
+Auparavant, l'installation de librairies Python se faisait de façon manuelle. Si je voulais par exemple installer une librairie Python _X_, il allait me falloir:
 
-1. Me rendre sur le site officiel de la librairie *X* (s'il existe bien évidemment).
-2. Télécharger le code Python de cette librairie *X*.
+1. Me rendre sur le site officiel de la librairie _X_ (s'il existe bien évidemment).
+2. Télécharger le code Python de cette librairie _X_.
 3. Étant donné que les librairies étaient pour la grande majorité distribuées sous forme de fichiers compressés, il fallait après téléchargement, décompresser le fichier téléchargé.
 4. Placer ensuite le dossier obtenu après décompression à un emplacement dédié au niveau de mon ordinateur.
 5. Tenter de le charger au niveau de mon projet.
@@ -488,26 +493,26 @@ Le problème avec cette façon de fonctionner, c'est qu'il fallait repasser par 
 
 Aujourd'hui, on utilise ce qu'on appelle un gestionnaire de dépendances. Et la plupart des langages de programmation en ont au moins un.
 
-- Le gestionnaire de dépendances le plus utilisé au niveau de *Ruby* est *bundler*.
-- Le gestionnaire de dépendances le plus utilisé au niveau de *PHP* est *composer*.
-- Les gestionnaires de dépendances les plus utilisés au niveau de *JavaScript* sont *npm* et *yarn*.
-- Le gestionnaire de dépendances le plus utilisé au niveau de *Python* est *pip*.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de _Ruby_ est _bundler_.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de _PHP_ est _composer_.
+-   Les gestionnaires de dépendances les plus utilisés au niveau de _JavaScript_ sont _npm_ et _yarn_.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de _Python_ est _pip_.
 
-Donc si nous voulons installer une librairie Python, nous allons le faire aujourd'hui comme des pros en utilisant *pip*. Voici la liste des librairies qu'il vous est possible d'installer via *pip*: [https://pypi.org/](https://pypi.org/).
+Donc si nous voulons installer une librairie Python, nous allons le faire aujourd'hui comme des pros en utilisant _pip_. Voici la liste des librairies qu'il vous est possible d'installer via _pip_: [https://pypi.org/](https://pypi.org/).
 
-Ces outils *bundler*, *composer*, *npm*, *yarn*, *pip* sont appelés gestionnaires de dépendances car ils vont nous permettre de gérer les dépendances de nos projets.
+Ces outils _bundler_, _composer_, _npm_, _yarn_, _pip_ sont appelés gestionnaires de dépendances car ils vont nous permettre de gérer les dépendances de nos projets.
 
-Les projets Django que nous allons créer dès le prochain chapitre vont dépendre de Django. Django sera donc **une dépendance** de chacun de ces projets. Si nous avons besoin de faire du traitement d'images, il existe une librairie Python très populaire nommée *Pillow* que nous pouvons utiliser. Si nous installons la librairie *Pillow*, elle deviendra également une *dépendance* de notre projet et ainsi de suite.
+Les projets Django que nous allons créer dès le prochain chapitre vont dépendre de Django. Django sera donc **une dépendance** de chacun de ces projets. Si nous avons besoin de faire du traitement d'images, il existe une librairie Python très populaire nommée _Pillow_ que nous pouvons utiliser. Si nous installons la librairie _Pillow_, elle deviendra également une _dépendance_ de notre projet et ainsi de suite.
 
 L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de nouvelles versions de nos dépendances se fera de manière ultra simple. On change la version, on exécute la commande de mise à jour et bang tout marche!
 
-Ready? Installons donc sans plus tarder *pip*.
+Ready? Installons donc sans plus tarder _pip_.
 
 ### 2.4.3. Installation de pip
 
-Euh, désolé de vous décevoir mais *pip* est déjà installé au niveau de votre ordinateur.
+Euh, désolé de vous décevoir mais _pip_ est déjà installé au niveau de votre ordinateur.
 
-Avant, il fallait installer *pip* manuellement mais depuis les versions récentes de Python, il est directement embarqué avec Python. Donc nous n'aurons rien à faire!
+Avant, il fallait installer _pip_ manuellement mais depuis les versions récentes de Python, il est directement embarqué avec Python. Donc nous n'aurons rien à faire!
 
 On peut le prouver en ouvrant un terminal et en tapant la commande:
 
@@ -518,9 +523,10 @@ On peut le prouver en ouvrant un terminal et en tapant la commande:
 ![Confirmation d'installation de pip sous macOS](assets/images/ch02/pip_macos.png)
 
 Comme vous pouvez le voir:
-- pour accéder à pip sous Windows, il vous faudra taper tout simple `pip`;
-- pour accéder à pip sous macOS, il vous faudra taper tout simple `pip3`.
-- pour accéder à pip sous Linux, il vous faudra taper tout simple `pip3.9`.
+
+-   pour accéder à pip sous Windows, il vous faudra taper tout simple `pip`;
+-   pour accéder à pip sous macOS, il vous faudra taper tout simple `pip3`.
+-   pour accéder à pip sous Linux, il vous faudra taper tout simple `pip3.9`.
 
 <blockquote class="notice">
     <p><strong>Note:</strong> Je vais dans le reste du livre utiliser la commande <code>pip3</code> pour faire référence à <em>pip</em> (vu que j'utilise un macOS), mais il vous faudra remplacer cette commande <code>pip3</code> par l'exécutable approprié en fonction de votre système d'exploitation (<code>pip</code> sous Windows, <code>pip3</code> sous macOS et <code>pip3.9</code> sous Linux).</p>
@@ -550,7 +556,7 @@ Le module `python-slugify` est un module assez simple permettant de créer un sl
 
 ![Module python-slugify sur PyPI](assets/images/ch02/python-slugify.png)
 
-Pour installer le module *python-slugify*, il nous suffit d'exécuter la commande suivante:
+Pour installer le module _python-slugify_, il nous suffit d'exécuter la commande suivante:
 
 ```bash
 $ pip3 install python-slugify
@@ -631,22 +637,21 @@ Qu'est-ce qu'on attend donc pour créer notre premier projet Django?
 
 Dans ce second chapitre, nous avons appris que:
 
-- La ligne de commande est une puissante vue textuelle de votre ordinateur.
-- En général, les développeurs préfèrent utiliser leur clavier et leur ligne de commande pour naviguer facilement sur leur ordinateur. Avec de la pratique, cette approche est beaucoup plus rapide que l'utilisation d'une souris.
-- En tant que développeurs, nous utiliserons largement la console pour créer et configurer nos projets Django.
-- Quelque soit le système d'exploitation utilisé, installer Python est chose facile!
-- Quelque soit le système d'exploitation utilisé, installer Sublime Text est un jeu d'enfant!
-- Python dispose d'un éventail de modules et packages au travers de la Librairie Standard Python.
-- On peut utiliser le gestionnaire de dépendances *pip* si nous souhaitons utiliser des librairies qui ne se trouvent pas au niveau de la Librairie Standard Python.
-- La plupart des langages de programmation disposent d'un gestionnaire de dépendances.
-- Le gestionnaire de dépendances le plus utilisé au niveau de *Ruby* est *bundler*.
-- Le gestionnaire de dépendances le plus utilisé au niveau de *PHP* est *composer*.
-- Les gestionnaires de dépendances les plus utilisés au niveau de *JavaScript* sont *npm* et *yarn*.
-- Le gestionnaire de dépendances le plus utilisé au niveau de Python est *pip*.
-- On appelle *dépendances* les librairies dont dépendent nos projets.
-- L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de mises à jour de nos dépendances se fera aisément.
-- Pour installer un module avec pip, on utilise la commande `pip3 install`.
-- Pour lister l'ensemble des modules installés, on utilise la commande `pip3 freeze` ou `pip3 list`.
-- Pour avoir des informations sur un module spécifique, on utilise la commande `pip3 show`.
-- Même s'il est possible d'installer nos dépendances de manière globale au niveau de notre système, il est généralement recommandé de les installer dans des environnements virtuels, ce qui nous simplifiera grandement la tâche lorsque nous serons rendus à travailler sur différents projets nécessitant chacun une version différente de cette dépendance.
-
+-   La ligne de commande est une puissante vue textuelle de votre ordinateur.
+-   En général, les développeurs préfèrent utiliser leur clavier et leur ligne de commande pour naviguer facilement sur leur ordinateur. Avec de la pratique, cette approche est beaucoup plus rapide que l'utilisation d'une souris.
+-   En tant que développeurs, nous utiliserons largement la console pour créer et configurer nos projets Django.
+-   Quelque soit le système d'exploitation utilisé, installer Python est chose facile!
+-   Quelque soit le système d'exploitation utilisé, installer Sublime Text est un jeu d'enfant!
+-   Python dispose d'un éventail de modules et packages au travers de la Librairie Standard Python.
+-   On peut utiliser le gestionnaire de dépendances _pip_ si nous souhaitons utiliser des librairies qui ne se trouvent pas au niveau de la Librairie Standard Python.
+-   La plupart des langages de programmation disposent d'un gestionnaire de dépendances.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de _Ruby_ est _bundler_.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de _PHP_ est _composer_.
+-   Les gestionnaires de dépendances les plus utilisés au niveau de _JavaScript_ sont _npm_ et _yarn_.
+-   Le gestionnaire de dépendances le plus utilisé au niveau de Python est _pip_.
+-   On appelle _dépendances_ les librairies dont dépendent nos projets.
+-   L'un des avantages qu'on a à utiliser un gestionnaire de dépendances est le fait que l'installation de mises à jour de nos dépendances se fera aisément.
+-   Pour installer un module avec pip, on utilise la commande `pip3 install`.
+-   Pour lister l'ensemble des modules installés, on utilise la commande `pip3 freeze` ou `pip3 list`.
+-   Pour avoir des informations sur un module spécifique, on utilise la commande `pip3 show`.
+-   Même s'il est possible d'installer nos dépendances de manière globale au niveau de notre système, il est généralement recommandé de les installer dans des environnements virtuels, ce qui nous simplifiera grandement la tâche lorsque nous serons rendus à travailler sur différents projets nécessitant chacun une version différente de cette dépendance.

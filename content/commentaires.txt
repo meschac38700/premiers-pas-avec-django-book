@@ -1,15 +1,4 @@
-parler de la différence entre slash et antislash (windows, linux/macOS)
-
-parler de la différence entre chemin relatif et chemin absolu.
-vous voyez que lorsqu'on fait un drag-drop le chemin est spécifié de manière différente. c'est ce qu'on appelle un chemin absolu car le chemin est spécifié depuis la racine C:\. Nous avons jusque-là utilisé des chemins relatifs, qui sont des chemins relatifs à notre emplacement actuel.
-
-bien regarder où le f'' est ce n'est pas printf
-
-le serveur se coupe si vous faites des erreurs de code python
-
-on peut mettre activate en lieu et place de activate.bat ça marche sous windows aussi
-
-le nom du template n'est pas obligé d'être le même que celui de la vue.
+indiquer à chaque fois on se trouve dans quel fichier dans le code
 
 changer tous mes textes en français. Made with Love ...
 
@@ -38,8 +27,6 @@ How can I see all available time zones?
 pytz provides helpers, including a list of current time zones and a list of all available time zones – some of which are only of historical interest.
 
 dire si c'Est mieux d'utiliser datetime.now et passer la variable ou bien utiliser les tags? qu'est-ce qui est mieux
-
-d'où vient le Y, insister que ce sont les formats
 
 clarifier dès le début la notion d'environnements: c'est quoi l'environnement de dev (local), l'environnement de production (live en ligne), l'environnement de staging (naomi).
 
